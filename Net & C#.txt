@@ -1,0 +1,205 @@
+1) Difference between .Net and C# ?
+.Net is framework and C# is a language.   
+	
+2) Difference between .Net frameworks? 
+Version 
+   18 Years before          2016				   Nov-2020 
+.Net Framework 4.X		.Net Core 3.X			.Net 5.0  (unified version)
+
+
+Windows only				cross platform
+very less dll				too many dll 
+size of dll is high			size of dll is small
+perforamance is low			perforamance is high
+does not support CLI		support CLI (crete,build and run project)
+
+3) What is Common Language Runtime (CLR) ?
+=> Manage execution of .Net Program.
+=> Just in time compiler translate compile code into machine code. (JIT)
+=> Provides memory management, exception handling, type checking and other service.
+
+4) Managed and Unmanaged Code
+=> Code developed in .Net framework is managed code.
+=> Code is directly executed by CLR instead of OS.
+=> Unmanaged Code directly executed under OS so does not provide services like exception handling, GC and type checking that all need to manage by programmer.
+=> Manage Life Cycle : C# Code ---> Compile ---> IL  ---> JIT ---> Native Code
+=> Unmanaged Life Cycle : Code ---> Compile --->  Native Code
+
+5) Real time usage of Abstract Class 
+=> There are two types of employee and its having many similar property and methods.
+=> Create one concreate base  class which having common methods and property.
+
+public class FullTimeEmployee							 
+{                                                        
+    public int ID { get; set; }                          
+    public string FirstName { get; set; }                
+    public string LastName { get; set; }                 
+    public int AnnualSalary { get; set; }                
+														 
+    public string GetFullName()                          
+    {                                                    
+        return this.FirstName + " " + LastName;          
+    }                                                    
+														 
+    public int GetMonthlySalary()                        
+    {                                                    
+        return this.AnnualSalary / 12;                   
+    }                                                    
+}
+public class ContractEmployee
+{
+    public int ID { get; set; }
+    public string FirstName { get; set; }
+    public string LastName { get; set; }
+    public int HourlyPay { get; set; }
+    public int TotalHoursWorked { get; set; }
+
+    public string GetFullName()
+    {
+        return this.FirstName + " " + LastName;
+    }
+
+    public int GetMonthlySalary()
+    {
+        return this.HourlyPay * this.TotalHoursWorked;
+    }
+}
+
+public class BaseEmployee
+{
+
+	public int ID { get; set; }                          
+    public string FirstName { get; set; }                
+    public string LastName { get; set; }            
+
+	public string GetFullName()                          
+    {                                                    
+        return this.FirstName + " " + LastName;          
+    }  
+	 public virtual int GetMonthlySalary()
+    {
+        throw new NotImplementedException();
+    }
+}
+
+
+
+public class FullTimeEmployee	: BaseEmployee						 
+{                                                        
+    public int AnnualSalary { get; set; }                
+														 
+	public override int GetMonthlySalary()                        
+    {                                                    
+        return this.AnnualSalary / 12;                   
+    }                                                    
+}
+public class ContractEmployee : BaseEmployee	
+{
+    public int HourlyPay { get; set; }
+    public int TotalHoursWorked { get; set; }
+
+    public override int GetMonthlySalary()
+    {
+        return this.HourlyPay * this.TotalHoursWorked;
+    }
+}
+
+public abstract class BaseEmployee
+{
+
+	public int ID { get; set; }                          
+    public string FirstName { get; set; }                
+    public string LastName { get; set; }            
+
+	public string GetFullName()                          
+    {                                                    
+        return this.FirstName + " " + LastName;          
+    }  
+	public abstract int GetMonthlySalary(); // All derive class need to implement this method.
+    
+}
+
+
+=> Here we have design BaseEmployee class for common purose
+=> Nothing like BaseEmployee so we can stop programmer to create object of it.
+=> Preventing to accidently create object of a class.
+=> 
+
+
+13) Difference b/w static class and singleton ?
+=> static is a keyword and singleton is a design pattern
+=> static stored in stack & singleton stored in heap.
+=> stitic does not support lazy loading & singleton support lazy loading.
+=> static object might be destroy from any where. like obj = null; 
+=> singleton object can not destory.
+
+=> singleton object can be pass as reference.
+=> singleton supports object disposal.
+=> singleton object can be cloned.
+
+
+
+
+14) What is difference b/w stack and heap.
+=> Stack is used to store primitive data types like int,bool,chal,float.
+=> Variable and value stored at same place
+=> Heap is used to store non primitive types like string,object.
+=> Variable store at stack and its reference value stored at heap
+
+
+15) What is Boxing / Unboxing
+=> convert value type to reference type call boxing. 
+=> int x = 10;   object y = x; // boxing
+=> convert reference type to value type call unboxing. 
+=> int x = 10;   object y = x; // boxing   int z = (int)y;  //unboxing
+
+16) What is casting? 
+=> There are 2 kind of casting. 1) Implicit 2) Explicit
+=> Converting data from one data type to another data type.
+=> int i=10; double x = i;  // implicit casting 
+=> lower data type to higher data type is normally implicit
+=> double y = 1000.25; int x = (int)y; // explicit casting.
+=> data lost happen. 
+
+17) Difference between Array and ArrayList
+=> Fix Type data list(strongly)			Different type data list (type as object)
+=> Size is predefined					Size is not predefined (flexible)
+=> Fetch value casting not needed		Fetch value casting is needed.(boxing and unboxing)	
+=> int m[] = {1,2,3,4};					ArrayList x = new ArrayList();
+=> Good perforamance 					Bad perforamance
+
+18) What are generic collection.
+=> Strongly type(array) and flexible list(array list)
+=> Overcome ArrayList problems.
+=> List<int> list = new List<int>();  //Strongly type and add as many values.
+
+
+19) What is difference between out and ref.
+=> Both are used to return multiple values.
+=> ref keyword is used to pass data in bi-directional way.
+=> out keyword is used to get data in uni-directional way.
+=> Before passing a variable as ref, it is required to be initialized otherwise compiler will throw error.
+=> No need to initialize variable if out keyword is used.
+=> In called method, it is not required to initialize the parameter passed as ref
+=> In called method, it is required to initialize the parameter passed as out.
+
+
+20) What is difference between const and readonly.
+=> readonly is a constant defined at runtime
+=> const is used to create a constant at compile time.
+=> readonly field value can be changed after declaration.
+=> const field value cannot be changed after declaration.
+=> readonly variables are declared as instance variable and assigned values in constructor.
+=> const fields are to be assigned at the time of declaration.
+
+
+21) Difference between Abstract Class and Interface.
+=> Abstract class as access specifier and interface does not have not even public
+=> Abstract class can have inplementation and interface does not have implmenation.
+=> Abstract class can inherit abstract class and interface. Interface only inherit interface.
+=> 
+
+
+22) Significant of virtual method
+=> basically telling derive class that if class want to use default implmentation then it can free to use it. 
+=> Another hand if class dont want to use default implmentation then  free to override the new implmentation.

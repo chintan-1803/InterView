@@ -1,0 +1,778 @@
+Google Authentication add in Angular.
+
+https://stackoverflow.com/questions/38091215/import-gapi-auth2-in-angular-2-typescript
+
+https://medium.com/@18arjunh/how-to-use-google-apis-with-oauth2-0-in-your-web-app-6ec2e8421751
+
+https://www.tutorialsteacher.com/ioc/inversion-of-control
+.Net Questions: Interview -- Advantmed -- 11/08/2021
+
+1. Circular reference. -- https://www.youtube.com/watch?v=YAqjf8obonU
+2. What is encapsulation ??  
+-- Encapsulation is the process of restricting access of components (members and methods) within bigger body (object or class) by defining access modifiers.
+3. use of dispose method.
+4. throw vs throw exception. -- 
+
+The basic difference is that the Throw exception overwrites the stack trace and this makes it hard to find the original code line number that has thrown the exception.
+Throw basically retains the stack information and adds to the stack information in the exception that it is thrown so that we will be able to know the original line number which has thrown exception.
+ 
+5. boxing vs unboxing -- https://www.youtube.com/watch?v=GVJ5EUhWQBc
+
+V to R -- Boxing
+R to V -- Unboxing
+Converting a value type to a reference type is called called boxing in C# and converting a reference type to a value type is called unboxing in C#.
+
+memory leak in .net
+desgin patterns
+
+dependency injection. 
+-- https://www.youtube.com/watch?v=daYmMZ28-Y0 , https://www.tutorialsteacher.com/ioc/dependency-injection
+-- https://www.dotnettricks.com/learn/dependencyinjection/implementation-of-dependency-injection-pattern-in-csharp
+
+Simple Factory Pattern
+
+https://www.codeproject.com/Articles/1131770/Factory-Patterns-Simple-Factory-Pattern
+https://www.c-sharpcorner.com/article/factory-method-design-pattern-in-c-sharp/ -- Factory Method Design Pattern
+https://www.dotnettricks.com/learn/designpatterns/factory-method-design-pattern-dotnet
+
+Simple Factory Vs Factory Method: https://www.c-sharpcorner.com/UploadFile/akkiraju/factory-design-pattern-vs-factory-method-design-pattern/
+
+
+Abstract Factory Design Pattern: https://www.youtube.com/watch?v=v-GiuMmsXj4
+
+cross site scripting. 
+-- https://www.quora.com/What-is-cross-site-scripting
+-- Cross site scripting is hacking technique in which a hacker inject some malicious java script code into a vulnerable website for doing some malicious activity or stealing browser history or for browser hijacking or application level session hijacking. 
+cross site request forgery. 
+-- https://blog.bitsrc.io/how-and-why-you-should-avoid-cors-in-single-page-apps-db25452ad2f8
+-- https://medium.com/tribalscale/stop-cursing-cors-c2cbb4997057
+CICD
+code review
+application pool
+What is https ?? Why it is secure ??
+GET Vs Post vs Put
+Http Status codes
+What is MVC?
+Jquery selector
+onload vs document.ready  -- https://www.youtube.com/watch?v=3dnc-gmlDvw
+
+1. document.ready is called before window.onload.
+2. document.ready is Jquery function while window.onload is plain (vanila) javascript function.
+
+ 
+
+types isolation levels in database  -- https://www.youtube.com/watch?v=-gxyut1VLcs
+
+Dirty Reads, Non Repeatable Reads , Phantom Reads 	   https://www.youtube.com/watch?v=CTCAo89fcQw
+
+
+1. Read Uncommitted 2. Read Committed 3. Repeatable Read 4.Searializable
+
+
+Why should we use  Normalisation in database ? how to achieve normalization in sql database ?
+
+Indexes in sql ??
+virtual DOM Vs Real DOM ?
+
+https://medium.com/devinder/react-virtual-dom-vs-real-dom-23749ff7adc9
+
+What are the HTML 5 web APIs?
+
+
+
+.Net Questions: Interview -- Advantmed -- 30/06/2021
+
+1. What is MSMQ ??
+2. Advantages of interface and inheritence --    
+Loosly coupled systems with interfaces:  https://www.youtube.com/watch?v=tKJY5icC4eM
+Writing testable application:  https://www.youtube.com/watch?v=mIVAhH9J60c
+Interfaces can resolve problem of circular reference (dependency) too. -- https://www.youtube.com/watch?v=YAqjf8obonU
+
+
+
+3. How to use IOC container in C# project ??
+
+https://www.youtube.com/watch?v=EPv9-cHEmQw
+
+IoC Container (a.k.a. DI Container) is a framework for implementing automatic dependency injection. Some examples of the same are as listed as below 
+ 
+ Unity,StructureMap,CastleWindsor,Ninject,Autofac,DryIoc,Simple Injector,Light Inject
+
+3. Difference between runtime vs compile time polymorphism
+4. What is dependency injection ??
+
+
+5. What is container in C# ??
+6. What is Anti forgery token ??
+7. What does CORS Mean ?
+8. == vs === in javascript ?  --- == compares only value of two operands while === check value and data type both
+9. let vs var
+10. What are anonymous functions in angular or javascript ?
+11. What is virtual DOM ??
+12. HTML selectors
+13. Components in Angular
+14. What is Service oriented architecture ?
+15. What is SAML ?
+	
+	This is what a typical flow might look like: The principal makes a request of the service provider. The service provider then requests authentication from the identity provider. The identity provider sends a SAML assertion to the service provider, and the service provider can then send a response to the principal.
+
+	If the principal (the user) was not already logged in, the identity provider may prompt them to log in before sending a SAML assertion.
+	
+16. What are the advantages of angular over .Net ?
+17. What is message queues ?
+18. What is signal R ??
+19. What are extern methods ??
+20. What are partial methods ??
+
+
+
+.Net Questions: Interview -- The ONE TECHNOLOGY -- 12/06/2021
+
+1. Rebuild vs Reorganize Index in SQL
+2. How can we prevent SQL injection ?
+3. Long vs LOB
+4. What is touple in SQL server
+5. What is materialised view in SQL server ?
+6. What is Deadlock and how to handle the same in SQL  ??
+7. What is Row level attribute in SQL server ?
+8. What is connection pooling in C# ?
+9. Connection Timeout Vs Command Timeout in C# ?
+10. Design Patterns in C# ?
+11. Code Access Security in C#
+12. dataset.clone vs dataset.copy in C#
+
+
+
+
+
+Angular deployment
+
+https://angular.io/guide/deployment
+
+https://hackr.io/blog/angular-interview-questions -- Angular Interview Questions
+
+What is observable operators ?
+Why Angular JS required ??
+What is NgRx in Angular ??
+What is Angular Universal ??
+What is ng-content directive ??
+What are the directive in Angular ??
+
+What is typescript ??
+TypeScript is a programming language developed and maintained by Microsoft.TypeScript is designed for the development of large applications and transcompiles to JavaScript.
+
+Transcompiles to JavaScript means --  The code written in Type script is converted in Javascript in browser.
+
+https://indepth.dev/posts/1140/angular-fat-dumb-and-happy
+
+What is Angular Interpolation? Angular interpolation is used display a component property in the respective view template with double curly braces syntax. ... Interpolation is used for one way data binding. Interpolation moves data in one direction from our components to HTML elements.
+
+Router-outlet in Angular works as a placeholder which is used to load the different components dynamically based on the activated component or current route state. Navigation can be done using router-outlet directive and the activated component will take place inside the router-outlet to load its content.
+
+
+What is difference between Angular Interpolation and Property Binding ??
+
+Property Binding: to set an element property to a non-string data value, you must use property binding.
+
+#ngIf and ng-Template tag
+
+
+Angular provides two different approaches to handling user input through forms: reactive and template-driven.
+
+
+Which kind of forms you have used in your application ?
+
+What angular version you have used in application ?
+
+What is the use of app.module.ts file in angular project ?
+
+What is the difference between normal style and style binding ?
+#####################################################################################################
+JWT implementation in Node.js with Refresh Token:
+
+https://livecodestream.dev/post/a-practical-guide-to-jwt-authentication-with-nodejs/
+
+https://stackoverflow.com/questions/27726066/jwt-refresh-token-flow?rq=1
+
+https://afteracademy.com/blog/implement-json-web-token-jwt-authentication-using-access-token-and-refresh-token
+
+######################### Questions from Rizwan for Node.js and Javascript ##########################
+
+- What is event loop in node? Explained well
+
+- What are generator function? Don’t know 3
+
+- What is the difference between Spread operator and crud operation? Answered
+
+- What about the rest parameter? Don’t know 2
+
+- Difference between deep copy and shallow copy? Not aware 2
+
+- What does object.assign do? Not used but explained
+
+- What does object.create do? Answered
+
+- What is currying function? Not aware 3
+
+- What is the difference between let constant and variable? Answered
+
+- What is memoization in javascript? Not aware 3
+
+- What is closure in javascript? Not aware 1
+
+- What is hoisting in javascript? Not aware 1
+
+
+######################################################################################################
+
+Kushal:
+
+1) What is docker ?
+
+2) Is there any relation between microservices and docker ?
+
+3) Have you heard about Istio ?
+
+#####################################################################################################
+
+Please find below points with individual who is going to discuss the mentioned Items in the meeting as per my understanding
+
+EMR Certification and Guideline Discussion -- Client Will discuss 
+Scope Discussion -- Client will discuss and discuss priority for different modules 
+Our Assumptions -- We will discuss mail shared from our side
+
+
+Few Quetsions:
+1. Do we need to showacse the DOC and PPT that you have shared ?
+2. Have we shared these docs with the client ?
+3. Can we say that We have worked for one of the biggest healthcare companies for Handling HEDIS and PIA products? 
+
+#####################################################################################################
+
+Case Study Document 
+
+Placement mangement 
+
+Does it mean handling data related to admission and stay of patients in the hospital ?
+
+Clinical Information
+
+1. Sending Notes to contract/agencies -- ???
+
+
+Visit Scheduling & Confirmation
+
+1. What is mileage management ? 
+2. Timesheet of doctors or whom ??
+
+Patient Management 
+1. What is Patient Authorization management ? 
+2. Does agency mean Hospital ? 
+3. What is skilled and non-skilled services ?
+4. Patient Placement means management of patient stay within the hospital  including room management and handling their various activities on daily basis. 
+
+Referral Management
+
+Referral Letter :A written order from your primary care doctor for you to see a specialist or get certain medical services. In many Health Maintenance Organizations (HMOs), you need to get a referral before you can get medical care from anyone except your primary care doctor.
+
+#####################################################################################################
+Viddyoze
+
+PIA (Risk Adjustment) is a method to offset the cost of providing health insurance for individuals—such as those with chronic health conditions—who represent a relatively high risk to insurers.  Risk adjustment models typically use an individual’s demographic data (age, sex, etc.) and diagnoses to determine a risk score.  The risk score is a relative measure of the probable costs to insure the individual.   This uses the diagnosis codes, among other things in a method called Hierarchical Condition Category coding, or HCC Coding.  These are used as a way for medical groups to estimate a patient's future health care costs in value-based payment models.
+
+You are very familiar with HEDIS, I think, from your time with Nifty.  HEDIS is an initiative by the National Committee on Quality Assurance to develop, collect, standardize, and report measures of health plan performances.  Allows consumers to compare health plan performance to other plans and to national or regional benchmarks. Although not originally intended for trending, HEDIS results are increasingly used to track year-to-year performance.  There also are state measures that we track based on client requests as well--the main differences in the two types of measures are 1. their source (NCQA vs. Insurance companies by state rather than national) and 2. State measures do not have scoring associated with them, but the NCQA measures do.
+
+
+InterView
+
+1. What is dynamic datatype in C# ?  -- Use case of dynamic variables need to be identified.
+
+
+https://www.tutorialsteacher.com/csharp/csharp-dynamic-type
+
+When we create any objects of dynamic datatype it avoids compile type checking of values being assigned to them. Type of that object constantly changes based on value assigned to it.
+
+
+2. What are application pools in IIS ?
+
+https://www.youtube.com/watch?v=JJmURky86-Q
+
+https://medium.com/@itIsMadhavan/how-do-web-servers-like-iis-works-on-its-background-11c9c0aec701
+https://www.infoworld.com/article/3152042/how-to-manage-and-configure-application-pools-in-iis.html
+
+https://success.outsystems.com/Support/Enterprise_Customers/Maintenance_and_Operations/Understanding_and_fine_tuning_Application_Pool_Recycling_for_use_with_OutSystems#:~:text=What%20is%20Application%20Pool%20Recycling,%2C%20hangs%2C%20or%20memory%20leaks. -- Use of APplication pool recycling
+
+
+3. should we use single application pool for multiple applications ?
+
+https://manage.accuwebhosting.com/knowledgebase/2053/Everything-you-should-know-about-IIS-Application-Pools.html
+
+Pros and cons of using multiple application pools for individual sites
+
+Pros:
+ • Your sites will be isolated from each other.  So if the application pool locks or has an error, it will only affect the single site.
+ • You can run different sites under different .NET versions.
+ • You can have unique settings for individual application pools.
+ • You can setup unique security features for each application pool.
+ 
+Cons:
+ • Each application pool uses its own memory, which can use up a lot of resources on a single machine.
+
+4. Abstract Class vs Interface
+
+Abstract class may have implementation for few of the members where Interface does not have implementation for any of its members.
+Interface members are public by default and they can't have access modifiers.Whereas for abstract classes we can set different access modifiers.
+For Abstract class, default access modifier is private for its members.
+Interfaces can not contain fields.
+Abstract class can have fields.
+
+Abstract class can inherit from another abstract class or interface.
+
+Interface can not inherit from Abstract class. It can only inherit from other interface.
+
+We should always keep base class as an Abstract class to avoid situation of creating objects of Base class.
+ 
+BaseUser,CoderUser,AccountantUser
+ 
+However there is no need to create object of BaseUser in the application, we can define common functionality in BaseUser class for CoderUSer and Accountant  or ManagerLevel user.
+
+5. What is virtual method ?
+
+6. Store proceure vs Function ?
+
+Procedure may or may not return a value. Function must return a value.
+We can call store procedure by using either Exec or Execute command whereas function can be called by using Select command
+Procedures can have both input and output parameters.
+Procedures cannot be called from function. Whereas  functions can be called from store procedures.
+Procedures allow SELECT and other DML (I/U/D) statements.Functions only allow select statements.
+We can create store procedure with and without parameters. We can create a function with parameters only.
+
+7. Indexes in SQL (Part 35 to 38 Kudvenkat)
+
+A primary key constrain will automatically create a clustered index on a table. And it will define physical order of data for that table.A table can only have one clustered index .
+
+Table and view indexes can help the query to find data quickly from the table. Indexes can enhance the performance of queries drasctically.
+
+In absence of indexes, Tablescan by query engine can reduce the performance of queries. 
+
+CREATE Index IX_tblEmployee_Salary on tblEmployee (Salary ASC) 
+CREATE Clustered Index IX_tblEmployee_Salary on tblEmployee (ID ASC)
+CREATE Clustered Index IX_tblEmployee_Salary on tblEmployee (Salary ASC, Gender DESC)
+CREATE Unique Clustered Index IX_tblEmployee_Salary on tblEmployee (Salary ASC, Gender DESC)
+CREATE NonClustered Index IX_tblEmployee_Salary on tblEmployee (Salary ASC)
+CREATE NonClustered Index IX_tblEmployee_Salary on tblEmployee (Salary ASC, Gender DESC) 
+CREATE Unique NonClustered Index IX_tblEmployee_Salary on tblEmployee (Salary ASC, Gender DESC) 
+
+SP_HelpIndex method  can be used to fetch all indexes for the relevant table
+
+SP_HelpIndex tblEmployee
+
+
+Index Types (Clustered,Non-Clustered,Unique,Filtered,XML,FullText,Spatial,Columnstore,Index with included columns,Index with computed columns )
+
+A clustered index determines the physical order of data in a table.For this reason, a table can have only one clustered index.Primary key automatically creates
+clustered index in table.
+
+A clustered index can have multiple columns which is known as clustered composite index. A explicit drop of primary key clustered index is not allowed.
+
+A composite clustered Index -- Telephone Directory, Dictionary -- These indexes define the order of data. No separate storage is required for these indexes
+
+A NonClustered Index -- Indexes in Textbook (Chapter wise,Module wise) -- As indexes in book need to have one relevant page to be stored likewise non clustered indexes are also stored separately from actual data. 
+
+A table can have multiple non clustered indexes. They will be stored separately from actual data.A non clustered index will not influence the ordering of data in a table. 
+
+Clustered index is faster than non clustered index, because , the non clustered index has to refer back to the table, if the selected colulmn in query are not present in the index.
+
+
+Unique and Non Unique indexes.
+
+Unique index is used to enforce uniqueness of key values in the index. By default, primary key creates unique clustered index. Both clustered and non-clustered indexes can be unique.
+
+Primary key actually uses unique clustered index to enforce uniqueness of column values.
+
+
+A UNIQUE constraint or Unique index cannot be created on an existing table,if the table contains duplicate values for the key columns. The solution for this would be either remove key columns from index definition or either delete or update duplicate values. 
+
+
+Performance of below queries will be benefited by having relevant Indexes on related columns
+ 
+-- SELECT statement with a WHERE clause will get benefits from index
+-- DELETE and UPdate statement
+-- Order by Queries with Index will avoid sorting of data during the query execution
+-- Group by Queries
+
+Disadvantages
+
+1. Additional Disk Space -- For Non-Clustered indexes, as they will be stored separately from the table, they will consume the space. Amount of the space will be depended on total number of columns and total data available in table.
+
+2. Insert,Update and Delete statements can become Slow : When DML  statements modifies data in a table , the data in all indexes also needs to be updated.
+indexes can help  to search and locate 	the rows that we want to modify but too many indexes to update can actually hurt the performance as well.
+
+ 
+
+If all the columns that you have requested in the SELECT caluse of query , are present in the Index, then there is no need to lookup in the table again
+The requested columns data can be simple returned from the index.
+
+A clustered index, always covers a query , since it contains all of the data  in a table.A composite index is an index on two or more columns. Both clustered and non-clustered indexes can be composite indexes. To a certain extent, a composite index, can cover a query.
+
+8. A clustered index can be also related with multiple columns. This type of index is known as clustered composite index.
+
+9. Disadvantages of index -- Additional disk space for non clustered index,
+
+
+
+
+10. Nvarchar vs Varchar
+ 
+ -- Nvarchar uses 2 bytes per character where varchar uses 1 byte per character.
+ 
+ -- The default length for varchar variables is 1. The maximum length for varchar varibales in SQL is 8000 characters. 
+ 
+ -- varchar(max) can store upto 2 GB of data but varchar(8001) will give you a error.
+ 
+ -- Nvarchar stores UNICODE data. Unicode means 16-bit character encoding schemes.
+ 
+ -- varchar stores ASCII data. one byte per character is utilised.
+ 
+ -- Unicode dataTypes -- nchar,nvarchar,nText -- For storing Globalized data -- All cultures -- N stands for all national languages
+ 
+ -- NonUniCode dataTypes -- char,varchar,Text -- For storing localized data -- English culture data 
+ 
+ -- https://www.youtube.com/watch?v=zfpxT9euyP4 (15:06)
+ 
+ 11. Zapier
+ https://www.youtube.com/watch?v=yBVMrZlP0ZM 
+ 
+ 
+ 12. Delegates in C#
+ -- It is reference type
+ -- A delegate can be used to call function which has similar syntax or signature
+ -- It is indispensable to have similar signature within function and delegate.
+ -- Delegate will only accept those functions as parameter for which the signature is matched. If it is not then it will give compile time error. Hence, delegates are Type safe function pointer.
+ -- Delegate syntax is very much similar to sntax of function except having delegate keyword between access modifier and  return type 
+		
+		public delegate void HelloFunctionDelegate(string strMsg);
+ --	Whenever we want to pass function as parameter in another function, we can utilize concept of delegates
+ -- For any framwork developer, if he or she does not want to make 
+ -- Delegates can be utilised to decouple function logic from the framework classes  
+ -- A multicast delegate is a delegate that has reference to more than one function. When an individual invokes a multicast delegate, all the functions
+ the delegate is pointing to are invoked.
+ -- A multocast delegate is created by chaining different delegates by using plus,minus sign (+,-). https://www.youtube.com/watch?v=7uJYp9NIhfQ
+ -- In a multicast delegate points to two methods returning some values, we can only harvest value which is being returned from the last method invocation.
+ 
+ Oops Concepts
+ 
+ https://www.c-sharpcorner.com/UploadFile/84c85b/object-oriented-programming-using-C-Sharp-net/
+ https://zoom.us/j/94814090176?pwd=d3p1N2JoVnkzb2k0MmJZQ3d4Y0xlZz09
+ 
+ 13. Can we assign access modifiers to constructor ?  Yes We can assign access modifiers to constructor
+ 
+ 14. Can we create multiple constructors with same signature ? -- No
+ 
+ 15. What is difference between static class and abstract class ?
+
+ 16. What is static constructor ?
+ 
+ 16. Normally Static class are used for creating kind of utilities in C#. (https://stackoverflow.com/questions/2390767/whats-the-difference-between-an-abstract-class-and-a-static-one)
+ 
+ Static classes are sealed and therefore cannot be inherited. 
+  
+ Static constructor must be parameter less. Access modifiers are not allowed with static constructors.
+ 
+ A user can implement constructor overloading by defining two or more constructors in a class sharing the same name. C# can distinguish the constructors with different signatures. i.e. the constructor must have the same name but with different parameters list.
+ 
+ A static constructor is used to initialize any static data, or to perform a particular action that needs to be performed once only. It is called automatically before the first instance is created or any static members are referenced.
+ 
+ https://www.c-sharpcorner.com/article/constructors-in-C-Sharp/
+ 
+ 
+ Default access modifier of class is Internal. And private for class member. Internal means class can be accessed within namespace.
+ 
+ For class members, default access modifier will be private. 
+
+ What are the advantages of  node js over C# for builiding APIs ?
+
+ What are different session modes in asp.net ?? https://www.youtube.com/watch?v=FxFVgtdnZGE&t=4s
+ 
+ What is serialization and deserialization in C# ?
+ 
+ Serialization means object to bytes. While deserialization means bytes to object.
+ 
+Order of execution of constructor and destructor call in c# inheritance: Constructor call is from top to bottom i.e. from base class to derive class and destructor call is in reverse order i.e. from bottom to top.
+ 
+ 15. Can Interface inherit class ? -- No interface can not inherit class. But interface can inherit another interface.
+ 
+ 16. Union vs Union ALL
+ 
+	Union applies distinct clause on final result set and eliminate duplicate records while union all returns all records and eliminates distinct clause.
+	
+ 17. Interfaces declared directly within a namespace can be public or internal and, just like classes and structs, interfaces default to internal access. Interface members are public by default because the purpose of an interface is to enable other types to access a class or struct.	
+	
+ 18. Can interface have properties ?
+ 
+ 19. String vs StringBuilder 
+ 
+	System.String variable creates separate object in memory every time user concate another strings into it and consume more memory in this case.
+	
+	Finally Gabage collector will run and clear these unoccupied objects but untill then these variables can cause server to to reach memory threshold situation.
+
+ 20. Primary key and unique key both are used to define uniqueness of column values. A table can only one primary key column. but whenever we want to enforce uniqueness of two or more columns we can declare unique key. Primary does not allow null values. whereas unique key allows one null into it.Primary key creates
+ unique clustered index automatically while unique key creates unique non-clustered index by default which can be changed to clustered if another clustered index is not present.
+
+ 
+
+
+User Class -- UserId would be my primary key. If we want enforce uniqueness in username and aadhar number then we can define unique keys for them. 
+	
+ 21. C# supports both synchronous and asynchronous types of programming.
+ 
+ https://www.c-sharpcorner.com/UploadFile/84c85b/asynchronous-programming-with-C-Sharp-5-0/#:~:text=Asynchronous%20Programming%20in%20C%23%20allows,async%20and%20await%20in%20C%23.&text=Let's%20learn%20the%20difference%20between,C%23%20is%20synchronous%20by%20default.
+ 
+ Asynchronous programming is a form of parallel programming that allows a unit of work to run separately from the primary application thread. When the work is complete, it notifies the main thread (as well as whether the work was completed or failed). There are numerous benefits to using it, such as improved application performance and enhanced responsiveness.
+ 
+ 22. Default access modifier for constructor is public.
+ 
+ 23. SELECT query to fetch all employees whose names are started with specific character without using like. 
+		SELECT * from Tbl_Employee where CHARINDEX('C',FirstName) = 1
+		SELECT * from Tbl_Employee where LEFT(FirstName,1) = 'C'
+		SELECT * from Tbl_Employee where SUBSTRING(FirstName,1,1) = 'C'
+		
+24. What is ASP.NET Web API
+
+   -- What is REST in layman terms		
+   
+   HTTP Status 204 (No Content) indicates that the server has successfully fulfilled the request and that there is no content to send in the response payload body. For such cases, return type for the method is void.
+   
+   HTTP Status 201 -- Item Created
+    
+   What is content negotiation in Asp.Net web API ?
+   
+   Client should be able to decide the format of data which can be received from the server. Using Accept header the client can specify the format of the response they want
+   
+		Accept : application/xml
+		Accept : application/json
+		
+	We will have Content-Type in response object which will define the format of data in response as requsted in Request by using Accept header. So ContentType in response and Accept in request should be matched.
+
+	Depending on the Accept header of the request object, response data should be sent back to client, this is what content negotiation in API development.
+
+	There are various formatter classes available in Web API which will convert data into requested format. These classes are known as Media Type formatter.
+
+	The Media type formatters are the classes that are responsible for serializing the request/response data so that the Web API Framework can understand the request data format and also send data in the format which the client expects. ASP.NET Web API includes the following built-in media type formatters.
+	
+	We can also plug in our own custom Media Type formatter in ASP.net Web API.
+	
+	We can also set multiple values for Accept header in request like below:
+	
+	Accept: application/xml, application/json  -- Data will be sent to client depending on the first formatter available in Web API.
+	
+	
+	Accept: application/xml;q=0.5, application/json;q=0.8 -- Here Quality factor will be worked as factor to set the priority of the format for data to be sent in response.
+	
+	If Accept header is not specified, by Default Web API returns JSON data.
+	
+	We can change formatter properties in WebAPIConfig file through config object of Register method  -- For example, pascal and camel case for object properties
+	of JSON.
+	
+	How to return only JSON from ASP.Net Web API Service
+	How to return only XML from ASP.Net Web API Service
+	How to return JSON  instead of XML  from ASP.Net WEB API service when a request is made from browser
+	Point you to an article that describes how to return CSV formatted data from ASP.Net Web API
+	
+	MediaTypeFormatter is an Abstract class from which JsonMediaTypeFormatter and XmlMediaTypeFormatter classes inherit from.
+	
+	By removing specific formatter in WebAPIConfig.cs, we can make application to use specific formatter only irrespctive of Accept header specified in request object.
+	
+	config.Formatters.Remove(config.Formatters.XmlFormatter);
+	config.Formatters.Remove(config.Formatters.JsonFormatter);
+	
+	Implementing post method in ASP NET Web API
+	
+	-- FromBody attribute in API method parameter will specify that mentioned parameter will come from request body
+	
+	How to create custom method names in ASP.Net Web API controller
+	
+	Default conversion to map HTTP verbs to methods in controller
+	
+	By default, the HTTP verb is mapped to a method in a controller that has the same name as the verb or starts with the verb.
+
+	If method name is not named Get() or if it does not start with word Get -- ASP.Net web API provides status code 405 (resource does not support Get Method)
+	
+	In this case, [HTTPGet] attribute on specific method name will do the required. 
+
+	HTTPVerb GET mapped to -- Get() or GetEmployees() or GetSomething()
+	HTTPVerb POST mapped to -- Get() or GetEmployees() or GetSomething()
+	
+	The object data in request body should match with object which is required to be updated.
+
+	Default  Behavior:
+	
+    If the parameter is simple type like int,bool, web API tries to get the value from the URI(or from Query string)
+	 
+	If the parameter is a complex type like Customer,Employees etc.,Web API tries to get the value from the request body.
+
+	To change the default behavior, parameter binding process use [FromBody] and [FromUri] attributes	
+	
+		public HttpResponseMessage put ([FromBody] int id,[FromUri] Employee Emp)
+	
+	So basically, FromBody and FromURI are used by WebAPI framework to make a decision about from where it will get the relevant data to execute method further.
+	
+	Calling ASP.Net Web API from Jquery
+	
+	$('#btn').click(function(){
+		$.ajax({
+			type: 'GET',
+			url:'http://localhost/api/Employees',
+			dataType:'json',  --(This is for Accept header in request)
+			success: function(data){
+				ulEmployees.clear();
+				$.each(data,function(index,val){
+					var fullName = val.FirstName + ' ' + val.LastName
+					ulEmployees.append('<li>'+fullName+'</li>')	
+				});
+			},
+			
+		})
+	})
+	
+	In recent versions of jQuery, setting "dataType" to an appropriate value also sets the accepts header. For instance, dataType: "json" sets the accept header to Accept: application/json, text/javascript,
+	
+	Calling ASP.Net Web API service in a cross domain using Jquery Ajax
+	
+	Cross-origin resource sharing (CORS) is a browser mechanism which enables controlled access to resources located outside of a given domain.
+	
+	What is Same Origin Policy of Browser ?
+	
+	Browsers allow a web page to make ajax requests only with in the same domain.Browser security prevents a web page from making AJAX request to another
+	domain.  This is called same origin policy.
+	
+	URLs have the same origin : http://localhost:1234/api/Employees,http://localhost:1234/api/Employee.html 
+	
+	Both URLs of page and API have same origin and port. Owing to which, call is allowed through AJAX.
+	
+	URLs have the different origin : http://localhost:1234/api/Employees,http://localhost:5678/api/Employee.html (Because they have different ports)
+	
+	URLs have the different origin : http://pragimtech.com/api/Employees,http://pragimtech.net/api/Employee.html (Because they have different domains)
+	
+	URLs have the different origin : http://pragimtech.com/api/Employees,https://pragimtech.com/api/Employees (Because they have different security schemes -- (http/https))
+	
+	Within the same project, each resource will be accessed through same PORT number. Whereas once project is changed, the assigned port will be different for accessing relevant resources of the same.
+	
+	Whenever we try to make such request, below error may present in browser,
+	
+	XMLHttpRequest cannot load 'http://localhost:1234/api/Employees'. No 'Access-Control-Allow-Origin' header present on requested resource
+	Origin 'http://localhost:5678/api/Employee.html' is threfore not allowed access.
+	
+	For security reasons, browsers do not allow cross domain ajax requets. There are 2 wats to get around this problem.
+	
+	1. Using JSONP (JSON with padding)
+	2. Enabling CORS (Cross origin resource sharing)
+	
+	What is JSONP
+	
+	JSONP stands for JSON with padding. All JSONP does is wraps the data in a function.
+	
+	JSON : {"FirstName":"Mark"}  JSONP: CallBackFunction({"FirstName":"Mark"})
+	
+	WebBrowsers allow javascript to be consumed from different domain. (Simple example is CDN)
+	
+	To pass JSONP formatted data, we need install new package called 'WebApiContrib.Formatting.Jsonp' in WebAPI project. In WebAPI project, new formatter returning JSOP data is required to be configured and inserted in formatter at first index. Lastly, datatype is required to be changed from 'json' to 'jsonp'
+	like below.
+	
+	$('#btn').click(function(){
+		$.ajax({
+			type: 'GET',
+			url:'http://localhost:1234/api/Employees',
+			dataType:'jsonp',  --(This is for Accept header in request)
+			success: function(data){
+				ulEmployees.clear();
+				$.each(data,function(index,val){
+					var fullName = val.FirstName + ' ' + val.LastName
+					ulEmployees.append('<li>'+fullName+'</li>')	
+				});
+			},
+			
+		})
+	})
+	
+	For JSONP data, accept header will be 'application/javascript'
+	
+	The other way to support CORS is to install Package called 'Microsoft.AspNet.Webapi.CORS', After installing this package, in WebAPICOnfig.cs we need to create EnableCorsAttribute object like below.
+	
+	EnableCorsAttribute cors = new EnableCorsAttribute(origin,headers,methods)
+	EnableCorsAttribute cors = new EnableCorsAttribute('http://localhost:6293,http://pragimtech',)
+	EnableCorsAttribute cors = new EnableCorsAttribute('*','*','*'(methids))  -- Allowing all sites for CORS
+	config.EanbleCors(cors);
+	
+	CORS attribute can be set either on entire project or on sepcific controller method too. If this attribute is set on controller level and specific method is required to be excluded from that CORS then we can use [DisableCors] attribute on a method level.
+	
+	Access-Control-Allow-OriginHeader
+	
+	Enable SSL in Visual Studio Development Server
+	
+	Basic Authentication in Web API (Video 18)
+	
+	test.equals(test1,StringComparison.OrdinalIgnoreCase)
+	
+	How to pass basic authentication details using AJAX.
+	
+	
+
+	OWIN middleware	
+	
+	
+	RoutePrefix attribute can be defined on controller level to avoid repeating the same route on every method name.
+	
+	Sometimes we need to override Route Prefix, this can be done by using '~' (tild symbol). 
+	[Route("~/api/teachers")]
+	
+	Attribute Routing Constraints
+	[Route("{id:int}")],[Route("{name:alpha}")]
+	[Route("{id:int:range(1,100)}")]
+	
+	How to generate Links using route Names -- By using Route Names, we can easily define Links in a proper way.
+	
+	IHttpActionResult vs HttpResponseMessage
+	
+	Every method which has HttpResponseMessage as return TYpe that can be replaced with IHttpActionResult return type.
+	
+	What are the benefits of IHttpActionResult over HttpResponseMessage ?
+	--
+	
+	So normally whenever we create any API project in .Net, return types for each method should be IHttpActionResult instead of HttpResponseMessage.
+	
+	There are certain helper with IHttpActionResult return type like : Ok,Content,NotFound
+	
+	Web API versioning using URIs.
+	
+	Why Versioning required in Web API ?
+	
+	Once a web API service is made public,different client applications start using and relying on it. As the business grows and requirements change, the services need to change without breaking existing clients and at the same time satisfying new client requirements.
+	
+	Versioning can be implemented by using : URI's,QueryString,Version Header,Accept Header,Media Type.
+	
+	
+###################BULK INSERT IN SQL Server with firing triggers on destination if available ####################
+	
+BULK
+INSERT ds_claims
+FROM 'C:\Users\chintan.dave\Desktop\ThinkEvolveSolve\CL-CARA-DATABASE\NON-LLP\test\data\source\claims1.csv'
+WITH
+(
+FIELDTERMINATOR = '|',
+ROWTERMINATOR = '\n',
+FIRSTROW=2,
+FIRE_TRIGGERS
+)
+GO
+
+####################################################################################################################
+
+
+Design Pattersn in C#
+
+Singleton Design pattern 
+
+How this pattern can be utilised shopping cart application ? -- https://www.c-sharpcorner.com/article/learn-about-static-vs-singleton/
+
+Logger library can use Singleton Design Pattern

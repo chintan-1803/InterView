@@ -1,0 +1,29 @@
+1) What is Angular
+=> Angular is Javascript UI framework which bind HTML UI with Javascript Model
+=> Help to reduce lines of code for binding.
+=> Can create single page application
+=> follow MVVM pattern.
+
+2) Diff. b/w Angular JS and Angular
+
+				Angular JS				Angular
+	
+Language     :	Javascript				Typescript
+Architecture :  Controller				Component
+CLI		     :    No					 Yes
+Lazy Loading :    No					 Yes
+
+3) What are directives ?
+=> Directives changes behavior of HTML DOM
+=> [(ngModel)],[hidden],{{name}}
+=> Angular syntax inside HTML which help to change behavior of HTML DOM
+
+
+4) Types of directives ?
+=> SAC  S: Structural A: Attribute  C: Component
+
+Structural : Change the DOM layout by adding and removing elements. *ngFor, 
+Attribute : Change appearance of DOM  ngIf,ngShow
+
+
+

@@ -1,0 +1,48 @@
+1) What is Asp.Net Core ?
+- Asp.Net Core is cross-platform, open source and highly scalable framework
+- released in 2016
+- Not upgraded version of ASP.Net  (Completely rewriting)
+- Latest version 5.0
+
+2) What are features of .Net Core?
+- Build in support of Dependency Injection
+- There is no web.config file. We can store custom config in appsettings.json file
+- There is no Global.asax file. We can register service into startup class.
+- good supports for asynchronous programming
+- Command line support to create,run and build application
+
+3) What are advantage of .Net Core over .Net ?
+- Support Cross platform
+- We can run .Net Core application on Linux and iOS.
+- There is no dependency on framework installation.
+- Open Source
+- In built support of DI
+
+4) Can ASP.Net Core application work with full .Net 4.x framework ?
+- Yes. via .Net Standard Library.
+
+5) What is Metapackages ?
+- It is a package having series of dependencies on additional package, rather than any actual dlls or code itself.
+
+6) What is routing in .Net Core ?
+- Map incoming request to route handler.
+- 2 type of routing. 1) Convenctional based routing  2) Attribute based routing
+
+7) What is startup class in .Net Core ?
+- Entry point of .Net core app.
+- All application must have this class. 
+- It has all configuration releated items.
+- not necessary that class name must "Startup" it can be anything.
+- It configured in Program class.
+- Multiple Startup class can be define for different environment.
+
+8) What is role of Startup class ?
+- configured services which required by the app.
+- 
+
+
+  
+
+
+
+
