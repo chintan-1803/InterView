@@ -1,1 +1,27 @@
+1. Need to do add Angular maps in Sample Angular Application
 
+Reference
+https://stackblitz.com/edit/angular-google-maps-demo?file=app%2Fapp.component.ts
+
+2. Need to do add Angular charts in Sample Angular Application and method to download the pdf of the same.
+
+Reference Links:
+https://developers.google.com/chart/interactive/docs/gallery/piechart
+https://stackblitz.com/edit/angular-google-chart?file=src%2Fapp%2Fapp.component.ts  -- Google charts
+https://stackblitz.com/edit/angular-google-chart-zecyor?file=src%2Fapp%2Fpie-chart.component.ts
+https://github.com/FERNman/angular-google-charts/issues/96 -- ChartReady Method to get getImageURI()
+
+HtmltoPDF Conversion (html2pdf.js)
+https://www.npmjs.com/package/html2pdf.js/v/0.9.0
+
+public GeneratePDF(HTMLElement) {
+    var element = document.getElementById(HTMLElement);
+    window.scrollTo(0, 0);
+    html2pdf(element, {
+      margin: 1,
+      filename: 'PropertyReport.pdf',
+      image: { type: 'jpeg', quality: 1 },
+      html2canvas: { scale: 5, logging: true },
+      jsPDF: { unit: 'mm', format: 'a4', orientation: 'p' }
+    });
+  }
