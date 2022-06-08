@@ -30,3 +30,5 @@ public GeneratePDF(HTMLElement) {
       jsPDF: { unit: 'mm', format: 'a4', orientation: 'p' }
     });
   }
+  
+  3. Need to create Reactive forms in Angular and must implement custom validation in the same
