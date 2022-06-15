@@ -32,3 +32,13 @@ public GeneratePDF(HTMLElement) {
   }
   
   3. Need to create Reactive forms in Angular and must implement custom validation in the same
+
+
+
+--ng generate service hero --module app.module
+--ng generate module welcome  --route welcome --module app.module
+--ng generate module edit  --route edit --module application.module
+--ng g component application-list --module=application.module.ts
+--ng g component jd-contact-info --module=application.module.ts
+--ng g component application-list --flat
+--ng g component nameComponent --module=app.module.ts
