@@ -42,3 +42,6 @@ public GeneratePDF(HTMLElement) {
 --ng g component jd-contact-info --module=application.module.ts
 --ng g component application-list --flat
 --ng g component nameComponent --module=app.module.ts
+
+
+Personal Access Token : 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
