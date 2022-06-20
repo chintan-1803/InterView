@@ -1,3 +1,31 @@
+1. What is encapsulation ??  
+-- Encapsulation is the process of restricting access of components (members and methods) within bigger body (object or class) by defining access modifiers.
+
+2. What are access modifiers ??
+
+Basically there are four accessmodifiers in C#.
+
+1. Public : Members declared public can be accessed from anywhere with the object of the class.
+2. Private : Members declared private can be accessed within the class only.
+3. Protected : Members delared proctected can be accessed within class and in derived class only.
+4. internal: Members declared internal can be accessed with object of class anaywhere in the same assembly (namespace) and they can not be accessed from other assembly (namespace) 
+
+https://www.programiz.com/csharp-programming/access-modifiers#:~:text=In%20C%23%2C%20access%20modifiers%20specify,can%20be%20accessed%20from%20anywhere
+
+3. What is circular dependency ? --https://www.codeproject.com/Articles/616344/What-is-Circular-Dependency-and-How-Do-We-Resolve, https://www.youtube.com/watch?v=YAqjf8obonU
+
+This is the situation in which multiple class libraries are dependent on each other which creates the problem of circular dependency which can be resolved by using mechanism called interfaces.
+
+
+4. What is the difference between circular dependency and circular reference ?
+
+5. What is the use of dispose method ? https://www.youtube.com/watch?v=99_4JxAkPP8
+
+Dispose method does free or release the resources which are being utilised by the object. For example,object of stream writer class does use a file as resource to make some ammendments. The file should be released once those necessary things are done if not then it can cause issues for other processes using the same resource. Classes which implements IDisposable interface, object of the same can call dispose method.
+
+StreamWriter is inherited by TextWriter class which implements IDispoable interface.
+
+
 Google Authentication add in Angular.
 
 https://stackoverflow.com/questions/38091215/import-gapi-auth2-in-angular-2-typescript
@@ -7,10 +35,8 @@ https://medium.com/@18arjunh/how-to-use-google-apis-with-oauth2-0-in-your-web-ap
 https://www.tutorialsteacher.com/ioc/inversion-of-control
 .Net Questions: Interview -- Advantmed -- 11/08/2021
 
-1. Circular reference. -- https://www.youtube.com/watch?v=YAqjf8obonU
-2. What is encapsulation ??  
--- Encapsulation is the process of restricting access of components (members and methods) within bigger body (object or class) by defining access modifiers.
-3. use of dispose method.
+
+
 4. throw vs throw exception. -- 
 
 The basic difference is that the Throw exception overwrites the stack trace and this makes it hard to find the original code line number that has thrown the exception.
