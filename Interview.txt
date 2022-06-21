@@ -26,27 +26,20 @@ Dispose method does free or release the resources which are being utilised by th
 StreamWriter is inherited by TextWriter class which implements IDispoable interface.
 
 
-Google Authentication add in Angular.
-
-https://stackoverflow.com/questions/38091215/import-gapi-auth2-in-angular-2-typescript
-
-https://medium.com/@18arjunh/how-to-use-google-apis-with-oauth2-0-in-your-web-app-6ec2e8421751
-
-https://www.tutorialsteacher.com/ioc/inversion-of-control
-.Net Questions: Interview -- Advantmed -- 11/08/2021
-
-
-
 4. throw vs throw exception. -- 
 
 The basic difference is that the Throw exception overwrites the stack trace and this makes it hard to find the original code line number that has thrown the exception.
 Throw basically retains the stack information and adds to the stack information in the exception that it is thrown so that we will be able to know the original line number which has thrown exception.
  
-5. boxing vs unboxing -- https://www.youtube.com/watch?v=GVJ5EUhWQBc
+5. boxing vs unboxing -- https://www.youtube.com/watch?v=GVJ5EUhWQBc,https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/types/boxing-and-unboxing
 
 V to R -- Boxing
 R to V -- Unboxing
 Converting a value type to a reference type is called called boxing in C# and converting a reference type to a value type is called unboxing in C#.
+
+6. What is https ? https://www.youtube.com/watch?v=CfQ2INQHkHU
+
+Https is the advanced version of https protoca which makes communication encrypted happenned betwenn browser and server on which sites are deployed. Nowadays, using Https protocal is quite common to avoid unwanted attacks by hackers. We can use this protocol by installing SSL certificate on web server.
 
 memory leak in .net
 desgin patterns
@@ -66,6 +59,17 @@ Simple Factory Vs Factory Method: https://www.c-sharpcorner.com/UploadFile/akkir
 
 Abstract Factory Design Pattern: https://www.youtube.com/watch?v=v-GiuMmsXj4
 
+
+
+Google Authentication add in Angular.
+
+https://stackoverflow.com/questions/38091215/import-gapi-auth2-in-angular-2-typescript
+
+https://medium.com/@18arjunh/how-to-use-google-apis-with-oauth2-0-in-your-web-app-6ec2e8421751
+
+https://www.tutorialsteacher.com/ioc/inversion-of-control
+.Net Questions: Interview -- Advantmed -- 11/08/2021
+
 cross site scripting. 
 -- https://www.quora.com/What-is-cross-site-scripting
 -- Cross site scripting is hacking technique in which a hacker inject some malicious java script code into a vulnerable website for doing some malicious activity or stealing browser history or for browser hijacking or application level session hijacking. 
@@ -75,7 +79,7 @@ cross site request forgery.
 CICD
 code review
 application pool
-What is https ?? Why it is secure ??
+
 GET Vs Post vs Put
 Http Status codes
 What is MVC?
