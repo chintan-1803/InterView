@@ -43,7 +43,10 @@ Https is the advanced version of https protoca which makes communication encrypt
 
 7. From where can we have SSL certificate ? Is there any costing for SSL certificate ?
 
-memory leak in .net
+8. memory leak in .net
+
+https://michaelscodingspot.com/ways-to-cause-memory-leaks-in-dotnet/
+
 desgin patterns
 
 dependency injection. 
