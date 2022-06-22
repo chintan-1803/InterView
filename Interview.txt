@@ -43,7 +43,11 @@ Https is the advanced version of https protoca which makes communication encrypt
 
 7. From where can we have SSL certificate ? Is there any costing for SSL certificate ?
 
-8. memory leak in .net
+8. memory leak in .net -- youtube.com/watch?v=eu_kTGv61WQ
+
+9. What is garbage collector ?
+
+10. What is Event Handler in C#?
 
 https://michaelscodingspot.com/ways-to-cause-memory-leaks-in-dotnet/
 
