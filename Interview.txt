@@ -59,7 +59,8 @@ Advantages of interface
 
 -- With the use of interfaces, we can build loosely coupled code which is easy to maintain and modify
 -- It gives opportunity to have multiple inheritence in C#
-
+-- Better readability of the businees of the application
+-- It also makes automatic testing friendly
 
 desgin patterns
 
