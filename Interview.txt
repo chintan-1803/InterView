@@ -21,7 +21,7 @@ This is the situation in which multiple class libraries are dependent on each ot
 
 5. What is the use of dispose method ? https://www.youtube.com/watch?v=99_4JxAkPP8
 
-Dispose method does free or release the resources which are being utilised by the object. For example,object of stream writer class does use a file as resource to make some ammendments. The file should be released once those necessary things are done if not then it can cause issues for other processes using the same resource. Classes which implements IDisposable interface, object of the same can call dispose method.
+Dispose method does free or release the resources which are being utilised by the object in that way it cleans the memory. For example,object of stream writer class does use a file as resource to make some ammendments. The file should be released once those necessary things are done if not then it can cause issues for other processes using the same resource. Classes which implements IDisposable interface, object of the same can call dispose method.
 
 StreamWriter is inherited by TextWriter class which implements IDispoable interface.
 
