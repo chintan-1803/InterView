@@ -62,6 +62,13 @@ Advantages of interface
 -- Better readability of the businees of the application
 -- It also makes automatic testing friendly
 
+12. Abstract Class vs Interface
+
+Interfaces can not contain fields.Abstract class can have fields.
+Abstract class may have implementation for few of the members where Interface does not have implementation for any of its members.
+Interface members are public by default,For Abstract class, default access modifier is private for its members.
+
+
 desgin patterns
 
 dependency injection. 
