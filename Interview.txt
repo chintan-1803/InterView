@@ -67,6 +67,32 @@ Advantages of interface
 Interfaces can not contain fields.Abstract class can have fields.
 Abstract class may have implementation for few of the members where Interface does not have implementation for any of its members.
 Interface members are public by default,For Abstract class, default access modifier is private for its members.
+Abstract class can inherit from another abstract class or interface.
+
+C# allows the user to inherit one interface into another interface. When a class implements the inherited interface then it must provide the implementation of all the members that are defined within the interface inheritance chain.
+
+We should always keep base class as an Abstract class to avoid situation of creating objects of Base class.
+ 
+BaseUser,CoderUser,AccountantUser
+ 
+However there is no need to create object of BaseUser in the application, we can define common functionality in BaseUser class for CoderUSer and Accountant or ManagerLevel user.
+
+13. should we use single application pool for multiple applications ?
+
+https://manage.accuwebhosting.com/knowledgebase/2053/Everything-you-should-know-about-IIS-Application-Pools.html
+
+Pros and cons of using multiple application pools for individual sites
+
+Pros:
+ • Your sites will be isolated from each other.  So if the application pool locks or has an error, it will only affect the single site.
+ • You can run different sites under different .NET versions.
+ • You can have unique settings for individual application pools.
+ • You can setup unique security features for each application pool.
+ 
+Cons:
+ • Each application pool uses its own memory, which can use up a lot of resources on a single machine.
+
+14. What is virtual method ?
 
 
 desgin patterns
@@ -360,40 +386,9 @@ https://www.infoworld.com/article/3152042/how-to-manage-and-configure-applicatio
 https://success.outsystems.com/Support/Enterprise_Customers/Maintenance_and_Operations/Understanding_and_fine_tuning_Application_Pool_Recycling_for_use_with_OutSystems#:~:text=What%20is%20Application%20Pool%20Recycling,%2C%20hangs%2C%20or%20memory%20leaks. -- Use of APplication pool recycling
 
 
-3. should we use single application pool for multiple applications ?
 
-https://manage.accuwebhosting.com/knowledgebase/2053/Everything-you-should-know-about-IIS-Application-Pools.html
 
-Pros and cons of using multiple application pools for individual sites
 
-Pros:
- • Your sites will be isolated from each other.  So if the application pool locks or has an error, it will only affect the single site.
- • You can run different sites under different .NET versions.
- • You can have unique settings for individual application pools.
- • You can setup unique security features for each application pool.
- 
-Cons:
- • Each application pool uses its own memory, which can use up a lot of resources on a single machine.
-
-4. Abstract Class vs Interface
-
-Abstract class may have implementation for few of the members where Interface does not have implementation for any of its members.
-Interface members are public by default and they can't have access modifiers.Whereas for abstract classes we can set different access modifiers.
-For Abstract class, default access modifier is private for its members.
-Interfaces can not contain fields.
-Abstract class can have fields.
-
-Abstract class can inherit from another abstract class or interface.
-
-Interface can not inherit from Abstract class. It can only inherit from other interface.
-
-We should always keep base class as an Abstract class to avoid situation of creating objects of Base class.
- 
-BaseUser,CoderUser,AccountantUser
- 
-However there is no need to create object of BaseUser in the application, we can define common functionality in BaseUser class for CoderUSer and Accountant  or ManagerLevel user.
-
-5. What is virtual method ?
 
 6. Store proceure vs Function ?
 
