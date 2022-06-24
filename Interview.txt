@@ -103,7 +103,13 @@ Procedures can have both input and output parameters.
 Procedures cannot be called from function. Whereas  functions can be called from store procedures.
 Procedures allow SELECT and other DML (I/U/D) statements.Functions only allow select statements.
 
-16. Indexes in SQL (Part 35 to 38 Kudvenkat)
+16. Primary Key vs Unique Key
+
+Any SQL table will only one primary key which by default generates clustered index. Primary key can be created with multiple columns.
+
+While any table can have multiple unique keys which by default generates non clustered index. A sinlge null value will be accepted in unique key column. If unique key is made by using multiple columns then once null is inserted for any one column then it won't allow null for other column as well.
+
+17. Indexes in SQL (Part 35 to 38 Kudvenkat)
 
 A primary key constrain will automatically create a clustered index on a table. And it will define physical order of data for that table.A table can only have one clustered index .
 
@@ -129,7 +135,7 @@ Index Types (Clustered,Non-Clustered,Unique,Filtered,XML,FullText,Spatial,Column
 A clustered index determines the physical order of data in a table.For this reason, a table can have only one clustered index.Primary key automatically creates
 clustered index in table.
 
-A clustered index can have multiple columns which is known as clustered composite index. A explicit drop of primary key clustered index is not allowed. Clustered Index can be automatically dropped by dropping relevant constraint.
+A clustered index can have multiple columns which is known as clustered composite index. A explicit drop of primary key clustered index is not allowed. Clustered Index can be automatically dropped by dropping relevant constraint of the column.
 
 A composite clustered Index -- Telephone Directory, Dictionary -- These indexes define the order of data. No separate storage is required for these indexes
 
