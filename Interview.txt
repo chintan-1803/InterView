@@ -95,6 +95,16 @@ Cons:
 14. What is virtual method ?
 
 
+15. Store proceure vs Function ?
+
+Procedure may or may not return a value. Function must return a value.
+We can call store procedure by using either Exec or Execute command whereas function can be called by using Select command
+Procedures can have both input and output parameters.
+Procedures cannot be called from function. Whereas  functions can be called from store procedures.
+Procedures allow SELECT and other DML (I/U/D) statements.Functions only allow select statements.
+
+
+
 desgin patterns
 
 dependency injection. 
