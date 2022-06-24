@@ -129,7 +129,7 @@ Index Types (Clustered,Non-Clustered,Unique,Filtered,XML,FullText,Spatial,Column
 A clustered index determines the physical order of data in a table.For this reason, a table can have only one clustered index.Primary key automatically creates
 clustered index in table.
 
-A clustered index can have multiple columns which is known as clustered composite index. A explicit drop of primary key clustered index is not allowed.
+A clustered index can have multiple columns which is known as clustered composite index. A explicit drop of primary key clustered index is not allowed. Clustered Index can be automatically dropped by dropping relevant constraint.
 
 A composite clustered Index -- Telephone Directory, Dictionary -- These indexes define the order of data. No separate storage is required for these indexes
 
