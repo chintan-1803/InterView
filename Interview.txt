@@ -103,6 +103,78 @@ Procedures can have both input and output parameters.
 Procedures cannot be called from function. Whereas  functions can be called from store procedures.
 Procedures allow SELECT and other DML (I/U/D) statements.Functions only allow select statements.
 
+16. Indexes in SQL (Part 35 to 38 Kudvenkat)
+
+A primary key constrain will automatically create a clustered index on a table. And it will define physical order of data for that table.A table can only have one clustered index .
+
+Table and view indexes can help the query to find data quickly from the table. Indexes can enhance the performance of queries drasctically.
+
+In absence of indexes, Tablescan by query engine can reduce the performance of queries. 
+
+CREATE Index IX_tblEmployee_Salary on tblEmployee (Salary ASC) 
+CREATE Clustered Index IX_tblEmployee_Salary on tblEmployee (ID ASC)
+CREATE Clustered Index IX_tblEmployee_Salary on tblEmployee (Salary ASC, Gender DESC)
+CREATE Unique Clustered Index IX_tblEmployee_Salary on tblEmployee (Salary ASC, Gender DESC)
+CREATE NonClustered Index IX_tblEmployee_Salary on tblEmployee (Salary ASC)
+CREATE NonClustered Index IX_tblEmployee_Salary on tblEmployee (Salary ASC, Gender DESC) 
+CREATE Unique NonClustered Index IX_tblEmployee_Salary on tblEmployee (Salary ASC, Gender DESC) 
+
+SP_HelpIndex method  can be used to fetch all indexes for the relevant table
+
+SP_HelpIndex tblEmployee
+
+
+Index Types (Clustered,Non-Clustered,Unique,Filtered,XML,FullText,Spatial,Columnstore,Index with included columns,Index with computed columns )
+
+A clustered index determines the physical order of data in a table.For this reason, a table can have only one clustered index.Primary key automatically creates
+clustered index in table.
+
+A clustered index can have multiple columns which is known as clustered composite index. A explicit drop of primary key clustered index is not allowed.
+
+A composite clustered Index -- Telephone Directory, Dictionary -- These indexes define the order of data. No separate storage is required for these indexes
+
+A NonClustered Index -- Indexes in Textbook (Chapter wise,Module wise) -- As indexes in book need to have one relevant page to be stored likewise non clustered indexes are also stored separately from actual data. 
+
+A table can have multiple non clustered indexes. They will be stored separately from actual data.A non clustered index will not influence the ordering of data in a table. 
+
+Clustered index is faster than non clustered index, because , the non clustered index has to refer back to the table, if the selected colulmn in query are not present in the index.
+
+
+Unique and Non Unique indexes.
+
+Unique index is used to enforce uniqueness of key values in the index. By default, primary key creates unique clustered index. Both clustered and non-clustered indexes can be unique.
+
+Primary key actually uses unique clustered index to enforce uniqueness of column values.
+
+
+A UNIQUE constraint or Unique index cannot be created on an existing table,if the table contains duplicate values for the key columns. The solution for this would be either remove key columns from index definition or either delete or update duplicate values. 
+
+
+Performance of below queries will be benefited by having relevant Indexes on related columns
+ 
+-- SELECT statement with a WHERE clause will get benefits from index
+-- DELETE and UPdate statement
+-- Order by Queries with Index will avoid sorting of data during the query execution
+-- Group by Queries
+
+Disadvantages
+
+1. Additional Disk Space -- For Non-Clustered indexes, as they will be stored separately from the table, they will consume the space. Amount of the space will be depended on total number of columns and total data available in table.
+
+2. Insert,Update and Delete statements can become Slow : When DML  statements modifies data in a table , the data in all indexes also needs to be updated.
+indexes can help  to search and locate 	the rows that we want to modify but too many indexes to update can actually hurt the performance as well.
+
+ 
+
+If all the columns that you have requested in the SELECT caluse of query , are present in the Index, then there is no need to lookup in the table again
+The requested columns data can be simple returned from the index.
+
+A clustered index, always covers a query , since it contains all of the data  in a table.A composite index is an index on two or more columns. Both clustered and non-clustered indexes can be composite indexes. To a certain extent, a composite index, can cover a query.
+
+8. A clustered index can be also related with multiple columns. This type of index is known as clustered composite index.
+
+9. Disadvantages of index -- Additional disk space for non clustered index,
+
 
 
 desgin patterns
@@ -408,78 +480,6 @@ Procedures can have both input and output parameters.
 Procedures cannot be called from function. Whereas  functions can be called from store procedures.
 Procedures allow SELECT and other DML (I/U/D) statements.Functions only allow select statements.
 We can create store procedure with and without parameters. We can create a function with parameters only.
-
-7. Indexes in SQL (Part 35 to 38 Kudvenkat)
-
-A primary key constrain will automatically create a clustered index on a table. And it will define physical order of data for that table.A table can only have one clustered index .
-
-Table and view indexes can help the query to find data quickly from the table. Indexes can enhance the performance of queries drasctically.
-
-In absence of indexes, Tablescan by query engine can reduce the performance of queries. 
-
-CREATE Index IX_tblEmployee_Salary on tblEmployee (Salary ASC) 
-CREATE Clustered Index IX_tblEmployee_Salary on tblEmployee (ID ASC)
-CREATE Clustered Index IX_tblEmployee_Salary on tblEmployee (Salary ASC, Gender DESC)
-CREATE Unique Clustered Index IX_tblEmployee_Salary on tblEmployee (Salary ASC, Gender DESC)
-CREATE NonClustered Index IX_tblEmployee_Salary on tblEmployee (Salary ASC)
-CREATE NonClustered Index IX_tblEmployee_Salary on tblEmployee (Salary ASC, Gender DESC) 
-CREATE Unique NonClustered Index IX_tblEmployee_Salary on tblEmployee (Salary ASC, Gender DESC) 
-
-SP_HelpIndex method  can be used to fetch all indexes for the relevant table
-
-SP_HelpIndex tblEmployee
-
-
-Index Types (Clustered,Non-Clustered,Unique,Filtered,XML,FullText,Spatial,Columnstore,Index with included columns,Index with computed columns )
-
-A clustered index determines the physical order of data in a table.For this reason, a table can have only one clustered index.Primary key automatically creates
-clustered index in table.
-
-A clustered index can have multiple columns which is known as clustered composite index. A explicit drop of primary key clustered index is not allowed.
-
-A composite clustered Index -- Telephone Directory, Dictionary -- These indexes define the order of data. No separate storage is required for these indexes
-
-A NonClustered Index -- Indexes in Textbook (Chapter wise,Module wise) -- As indexes in book need to have one relevant page to be stored likewise non clustered indexes are also stored separately from actual data. 
-
-A table can have multiple non clustered indexes. They will be stored separately from actual data.A non clustered index will not influence the ordering of data in a table. 
-
-Clustered index is faster than non clustered index, because , the non clustered index has to refer back to the table, if the selected colulmn in query are not present in the index.
-
-
-Unique and Non Unique indexes.
-
-Unique index is used to enforce uniqueness of key values in the index. By default, primary key creates unique clustered index. Both clustered and non-clustered indexes can be unique.
-
-Primary key actually uses unique clustered index to enforce uniqueness of column values.
-
-
-A UNIQUE constraint or Unique index cannot be created on an existing table,if the table contains duplicate values for the key columns. The solution for this would be either remove key columns from index definition or either delete or update duplicate values. 
-
-
-Performance of below queries will be benefited by having relevant Indexes on related columns
- 
--- SELECT statement with a WHERE clause will get benefits from index
--- DELETE and UPdate statement
--- Order by Queries with Index will avoid sorting of data during the query execution
--- Group by Queries
-
-Disadvantages
-
-1. Additional Disk Space -- For Non-Clustered indexes, as they will be stored separately from the table, they will consume the space. Amount of the space will be depended on total number of columns and total data available in table.
-
-2. Insert,Update and Delete statements can become Slow : When DML  statements modifies data in a table , the data in all indexes also needs to be updated.
-indexes can help  to search and locate 	the rows that we want to modify but too many indexes to update can actually hurt the performance as well.
-
- 
-
-If all the columns that you have requested in the SELECT caluse of query , are present in the Index, then there is no need to lookup in the table again
-The requested columns data can be simple returned from the index.
-
-A clustered index, always covers a query , since it contains all of the data  in a table.A composite index is an index on two or more columns. Both clustered and non-clustered indexes can be composite indexes. To a certain extent, a composite index, can cover a query.
-
-8. A clustered index can be also related with multiple columns. This type of index is known as clustered composite index.
-
-9. Disadvantages of index -- Additional disk space for non clustered index,
 
 
 
