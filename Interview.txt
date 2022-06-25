@@ -844,3 +844,78 @@ Singleton Design pattern
 How this pattern can be utilised shopping cart application ? -- https://www.c-sharpcorner.com/article/learn-about-static-vs-singleton/
 
 Logger library can use Singleton Design Pattern
+
+
+06/25/2022
+
+1. Static Class in C# and Can we have static Constructor and Is Contrcutor requried in static class?
+2. String vs String Builder
+3. String test = '' , String test = String.empty --> What is the difference between these two?
+4. What is the use of Using statement ?
+5. When to use ExecuteNonQuery vs ExecuteScalar ?
+6. What is Kafta and Elastic Search?
+7. What Caching mechanism in C#?
+8. What is paraller execution in C# ?
+9. What is Multithreading in C# and how it can be executed?
+10. Char VS Nvarchar VS Varchar
+11. Use Nolock 
+12. Please do example of Begin transaction without committing the same and try to verify various cases in similar tab and different tab. Is there any difference happens if we use nolock in select statement while uncommitted transaction is still running?
+13. What is Entity framework?
+14. Flow of MVC
+15. Define depedency injection with an example in C#, Give one example of dependency Injection in Angular
+16. Readonly vs Constant in C#
+17. What does T define in C# ? Dynamic type
+18. Can any class inherit abstract class and interface both ?
+19. Can Abstract class have contructor ?
+20. Partition in SQL
+21. What items you will check and correct while working for C# code improving?
+22. Which tool was used for load balancing ?
+23. Flow of request and response once hit the URL in browser for .Net sites
+24. Token 
+25. How can we make our APIs safer ?
+26. Insert trigger on table A --> Can we write Insert statement on the same table --- If we write then what will happen ?
+27. Indexes in SQL
+28. Primary Key vs Unique Keys
+29. What is lazy loading in Angular ? Can we have anything in C# for Lazy loading ?
+30. What is observable and subscribe ?
+31. Promise vs Subscribe ?
+32. 
+
+	Class A()
+	{
+		public void test (int a)
+		public void test (double a)
+	}
+	
+	Is above example method overloading ??
+	
+	Can we have something like below ?
+	
+	Class A()
+	{
+		public int test (int a)
+		public void test (double a)
+	}
+
+	Is above example method overloading ?
+
+33.
+    Class A()
+	{
+	 public void test()
+	}
+	 
+	Class B() : A
+	{
+	 public override voide test()
+	}
+	
+	Can we override method in child class which is neither abstract nor virtual ??
+
+34. Practicle test for identifying below certain example of string as valid or invalid
+
+{[(a+b)]} -- Valid
+
+{[a+b}] -- Invalid  -- We can use concept of single array and stack concept -- Last in First Serve -- More details are in paper have a photo and keep somewhere stored. 
+
+35. Can I have multiple catch statements ?? If I have catch blocks one handles NULL exception and other general exception. In which should I write them?
