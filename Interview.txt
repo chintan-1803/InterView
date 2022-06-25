@@ -918,4 +918,5 @@ Logger library can use Singleton Design Pattern
 
 {[a+b}] -- Invalid  -- We can use concept of single array and stack concept -- Last in First Serve -- More details are in paper have a photo and keep somewhere stored. 
 
-35. Can I have multiple catch statements ?? If I have catch blocks one handles NULL exception and other general exception. In which should I write them?
+35. Can I have multiple catch statements ?? If I have catch blocks in which one handles NULL exception and other general exception. In which should I write them?
+36. How are logs are maintained in the applications in which you have worked for bug verification ?
