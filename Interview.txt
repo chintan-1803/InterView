@@ -47,6 +47,9 @@ Https is the advanced version of https protocol which makes communication encryp
 
 8. memory leak in .net -- youtube.com/watch?v=eu_kTGv61WQ
 
+Memory leak in .net is an unfortunated situation in which memory by certain objects is kept being utilised after their purposes fulfilled. For example, objects of stream writers classes and other objects interacting with database keep using resource and memory after their purposes fulfilled which cause memory leak and death of memory in application server. 
+
+
 9. What is garbage collector ?
 
 10. What is Event Handler in C#?
