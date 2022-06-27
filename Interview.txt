@@ -197,6 +197,27 @@ Value to readonly variable can be assigned either at time of assignment or in th
 
 19. What is the difference between Before vs Insert triggers?
 
+20. char VS nchar VS varchar VS nvarchar
+
+Link: https://stackoverflow.com/questions/176514/what-is-the-difference-between-char-nchar-varchar-and-nvarchar-in-sql-server#:~:text=char%20and%20nchar%20are%20fixed,storage%20like%20char%20or%20nchar%20.
+
+char and nchar are fixed length storage and they will reserve storage of number of characters which you have mentioned at time of declaration in brackets irrespective how many charcters are assigned.
+
+For example:
+
+Declare @test char(2) = 'k' Declare @test nchar(2) = 'k' -- Both these statements consume storage of 2 characters respectively however only single character is assigned.
+
+While this is not the case with varchar or nvarchar. They variable length storage and only consume storage for the charcters which are assigned to the variable.
+
+Declare @test varchar(2) = 'k' Declare @test nvarchar(2) = 'k' -- Both these statements consume storage of 2 characters respectively however only single character is assigned.
+
+
+varchar variables can store ASCII charcters while nvarchar variable can store Unicode characters. Nvarchar consume double storage than varchar to store single character. Similiar logic also applies for char and nchar too.
+
+In ideal sitution, we must use varchar or nvarchar only based on need of whether we are required to store ASCII values of unicode characters
+
+
+
 desgin patterns
 
 dependency injection. 
