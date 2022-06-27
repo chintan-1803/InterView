@@ -195,7 +195,7 @@ the constructor.
 Value to readonly variable can be assigned either at time of assignment or in the constructor of the class only.
 
 
-
+19. What is the difference between Before vs Insert triggers?
 
 desgin patterns
 
