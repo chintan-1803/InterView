@@ -960,3 +960,15 @@ Logger library can use Singleton Design Pattern
 
 35. Can I have multiple catch statements ?? If I have catch blocks in which one handles NULL exception and other general exception. In which should I write them?
 36. How are logs are maintained in the applications in which you have worked for bug verification ?
+
+37. Is below scenario possible?
+
+Abstract Class A {
+}
+
+interface Imethods {
+}
+
+Public class B : A,Imethods
+{
+}
