@@ -41,7 +41,7 @@ Converting a value type to a reference type is called called boxing in C# and co
 
 6. What is https ? https://www.youtube.com/watch?v=CfQ2INQHkHU,https://www.tutorialsteacher.com/https/what-is-https
 
-Https is the advanced version of https protoca which makes communication encrypted happenned betwenn browser and server on which sites are deployed. Nowadays, using Https protocal is quite common to avoid unwanted attacks by hackers. We can use this protocol by installing SSL certificate on web server. Nowadays Google also provides priority to https site while giving results back according to your search.
+Https is the advanced version of https protocol which makes communication encrypted happenned between browser and server on which sites are deployed. Nowadays, using Https protocol is quite common to avoid unwanted attacks by hackers. We can use this protocol by installing SSL certificate on web server. Nowadays Google also provides priority to https site while giving results back according to your search.
 
 7. From where can we have SSL certificate ? Is there any costing for SSL certificate ?
 
