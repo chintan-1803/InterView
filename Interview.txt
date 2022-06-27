@@ -58,7 +58,7 @@ https://michaelscodingspot.com/ways-to-cause-memory-leaks-in-dotnet/
 
 11. Interfaces -- https://www.youtube.com/watch?v=tKJY5icC4eM
 
-Interfaces do not have implmentation, they only have method signatures.
+Interfaces do not have implementation, they only have method signatures.
 
 Advantages of interface 
 
