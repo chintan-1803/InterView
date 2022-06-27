@@ -165,21 +165,35 @@ Performance of below queries will be benefited by having relevant Indexes on rel
 
 Disadvantages
 
-1. Additional Disk Space -- For Non-Clustered indexes, as they will be stored separately from the table, they will consume the space. Amount of the space will be depended on total number of columns and total data available in table.
+a. Additional Disk Space -- For Non-Clustered indexes, as they will be stored separately from the table, they will consume the space. Amount of the space will be depended on total number of columns and total data available in table.
 
-2. Insert,Update and Delete statements can become Slow : When DML  statements modifies data in a table , the data in all indexes also needs to be updated.
+b. Insert,Update and Delete statements can become Slow : When DML  statements modifies data in a table , the data in all indexes also needs to be updated.
 indexes can help  to search and locate 	the rows that we want to modify but too many indexes to update can actually hurt the performance as well.
-
- 
-
 If all the columns that you have requested in the SELECT caluse of query , are present in the Index, then there is no need to lookup in the table again
 The requested columns data can be simple returned from the index.
 
 A clustered index, always covers a query , since it contains all of the data  in a table.A composite index is an index on two or more columns. Both clustered and non-clustered indexes can be composite indexes. To a certain extent, a composite index, can cover a query.
 
-8. A clustered index can be also related with multiple columns. This type of index is known as clustered composite index.
+c. A clustered index can be also related with multiple columns. This type of index is known as clustered composite index.
 
-9. Disadvantages of index -- Additional disk space for non clustered index,
+d. Disadvantages of index -- Additional disk space for non clustered index,
+
+18. Readonly vs Constant in C# --  https://www.infoworld.com/article/3546242/how-to-use-const-readonly-and-static-in-csharp.html#:~:text=The%20readonly%20keyword%20can%20be,other%20method%20except%20the%20constructor.
+
+Variables declared with const keyword are known as compile type constants.It should be noted that a constant variable is immutable (won't change further in its lifetime)
+
+The const keyword can only be applied to the primitive data types (such as ints, floats, chars, and booleans) and strings. Note also that you cannot use the const 
+keyword to create a constant object.
+
+For example: Database connection string
+
+
+The readonly keyword can be used to define a variable or an object as readable only. This means that the variable or object can be assigned a value 
+at the class scope or in a constructor only. You cannot change the value or reassign a value to a readonly variable or object in any other method except 
+the constructor.
+
+Value to readonly variable can be assigned either at time of assignment or in the constructor of the class only.
+
 
 
 
@@ -863,7 +877,7 @@ Logger library can use Singleton Design Pattern
 13. What is Entity framework?
 14. Flow of MVC
 15. Define depedency injection with an example in C#, Give one example of dependency Injection in Angular
-16. Readonly vs Constant in C#
+
 17. What does T define in C# ? Dynamic type
 18. Can any class inherit abstract class and interface both ?
 19. Can Abstract class have contructor ?
