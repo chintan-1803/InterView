@@ -4,7 +4,7 @@ namespace ContradoChallenge.Models
 
     using System.ComponentModel.DataAnnotations;
     using System.ComponentModel.DataAnnotations.Schema;
-
+    using System.Collections.Generic;
 
     [Table("Result")]
     public class Result
@@ -15,7 +15,7 @@ namespace ContradoChallenge.Models
         public string section { get; set; }
         public string subsection { get; set; }
         public string title { get; set; }
-        public string abstract_1 { get; set; }
+        public string @abstract { get; set; }
 
         public string url { get; set; }
         public string uri { get; set; }
@@ -27,18 +27,17 @@ namespace ContradoChallenge.Models
 
         public string material_type_facet { get; set; }
         public string kicker { get; set; }
-        public Des_Facet[] des_facet { get; set; }
-        public Org_Facet[] org_facet {get; set; }
-        public Per_Facet[] per_facet { get; set; }
-        public Geo_Facet[] geo_facet { get;  set; }
-        public Multimedia[] multimedia { get; set; }
+        public List<Des_Facet> des_facet { get; set; }
+        public List<Org_Facet> org_facet {get; set; }
+        public List<Per_Facet> per_facet { get; set; }
+        public List<Geo_Facet> geo_facet { get;  set; }
+        public List<Multimedia> multimedia { get; set; }
         public string short_url { get; set; }
     }
 
     [Table("Multimedia")]
     public class Multimedia
     {
-
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int multimediaId { get; set; }
@@ -47,8 +46,8 @@ namespace ContradoChallenge.Models
         public int height { get; set; }
         public int width { get; set; }
 
-        public int type { get; set; }
-        public int subtype { get; set; }
+        public string type { get; set; }
+        public string subtype { get; set; }
 
         public string caption { get; set; }
         public string copyright { get; set; }
@@ -63,6 +62,7 @@ namespace ContradoChallenge.Models
 
         public string name { get; set; }
     }
+
 
     [Table("Org_Facet")]
     public class Org_Facet

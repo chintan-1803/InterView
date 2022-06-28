@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\chintan.dave\\Desktop\\Contrado\\ContradoChallenge\\ContradoChallenge\\ContradoChallenge.csproj": {}
+    "C:\\Users\\chintan.dave\\Desktop\\InterView\\ContradoChallenge\\ContradoChallenge\\ContradoChallenge.csproj": {}
   },
   "projects": {
-    "C:\\Users\\chintan.dave\\Desktop\\Contrado\\ContradoChallenge\\ContradoChallenge\\ContradoChallenge.csproj": {
+    "C:\\Users\\chintan.dave\\Desktop\\InterView\\ContradoChallenge\\ContradoChallenge\\ContradoChallenge.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\chintan.dave\\Desktop\\Contrado\\ContradoChallenge\\ContradoChallenge\\ContradoChallenge.csproj",
+        "projectUniqueName": "C:\\Users\\chintan.dave\\Desktop\\InterView\\ContradoChallenge\\ContradoChallenge\\ContradoChallenge.csproj",
         "projectName": "ContradoChallenge",
-        "projectPath": "C:\\Users\\chintan.dave\\Desktop\\Contrado\\ContradoChallenge\\ContradoChallenge\\ContradoChallenge.csproj",
+        "projectPath": "C:\\Users\\chintan.dave\\Desktop\\InterView\\ContradoChallenge\\ContradoChallenge\\ContradoChallenge.csproj",
         "packagesPath": "C:\\Users\\chintan.dave\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\chintan.dave\\Desktop\\Contrado\\ContradoChallenge\\ContradoChallenge\\obj\\",
+        "outputPath": "C:\\Users\\chintan.dave\\Desktop\\InterView\\ContradoChallenge\\ContradoChallenge\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\chintan.dave\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -39,6 +39,10 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "dependencies": {
+            "Microsoft.AspNetCore.Mvc.NewtonsoftJson": {
+              "target": "Package",
+              "version": "[3.1.10, )"
+            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[5.0.6, )"

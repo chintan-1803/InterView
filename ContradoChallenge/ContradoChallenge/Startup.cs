@@ -29,6 +29,7 @@ namespace ContradoChallenge
         {
             services.AddControllers();
             services.AddDbContext<ContradoContext>(options => options.UseSqlServer(Configuration.GetConnectionString("ContradoDatabase")));
+            services.AddMvc().AddNewtonsoftJson();   
         }
 
 

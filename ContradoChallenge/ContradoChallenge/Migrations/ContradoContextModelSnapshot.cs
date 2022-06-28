@@ -96,11 +96,11 @@ namespace ContradoChallenge.Migrations
                     b.Property<int?>("resultId")
                         .HasColumnType("int");
 
-                    b.Property<int>("subtype")
-                        .HasColumnType("int");
+                    b.Property<string>("subtype")
+                        .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("type")
-                        .HasColumnType("int");
+                    b.Property<string>("type")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("url")
                         .HasColumnType("nvarchar(max)");
@@ -162,7 +162,7 @@ namespace ContradoChallenge.Migrations
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-                    b.Property<string>("abstract_1")
+                    b.Property<string>("abstract")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("byline")
