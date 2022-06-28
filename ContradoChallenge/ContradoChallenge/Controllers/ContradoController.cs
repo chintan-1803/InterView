@@ -146,23 +146,7 @@ namespace ContradoChallenge.Controllers
             return "value";
         }
 
-        // POST api/<ContradoController>
-        [HttpPost]
-        public void Post([FromBody] string value)
-        {
-        }
-
-        // PUT api/<ContradoController>/5
-        [HttpPut("{id}")]
-        public void Put(int id, [FromBody] string value)
-        {
-        }
-
-        // DELETE api/<ContradoController>/5
-        [HttpDelete("{id}")]
-        public void Delete(int id)
-        {
-        }
+           
     }
 
 
