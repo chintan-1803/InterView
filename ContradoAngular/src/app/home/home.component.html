@@ -1,3 +1,9 @@
-<p>home works!</p>
+<form [formGroup]="contradoForm">
+        <input type="text" id="apiKey" formControlName="apiKey">
+        <span style="color: red;font-weight: 100;" *ngIf="contradoForm.get('apiKey')?.dirty && !contradoForm.get('apiKey')?.valid && contradoForm.get('apiKey')?.hasError('inValidValue')">
+            Invalid API Key.
+        </span>
+</form>
 
+<br>
 <button (click)="getData()">Submit</button>
