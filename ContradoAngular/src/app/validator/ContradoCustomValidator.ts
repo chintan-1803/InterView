@@ -1,6 +1,6 @@
 import {ValidationResult} from "./validationResult";
 import { AbstractControl,FormControl} from "@angular/forms";
-import { Contrado_Constants } from "../constant/OnlineAppConstants";
+import { Contrado_Constants } from "../constant/ContradoConstants";
 
 export class ContradoCustomValidator
 {

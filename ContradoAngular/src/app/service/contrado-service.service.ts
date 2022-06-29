@@ -3,7 +3,7 @@ import {HttpClient,HttpHeaders} from '@angular/common/http';
 import { Observable } from 'rxjs';
 import {ResponseResult} from '../model/ResponseResult';
 import { CustomServiceService } from './custom-service.service';
-
+import { Contrado_Constants } from '../constant/ContradoConstants';
 @Injectable({
   providedIn: 'root'
 })
@@ -14,7 +14,7 @@ export class ContradoServiceService {
   }
 
   getNewYorkTimesData():Observable<ResponseResult>{
-    return this.customServiceService.get('http://localhost:5001/api/Contrado');
+    return this.customServiceService.get(Contrado_Constants.URL + 'Contrado');
   }
 
 }
