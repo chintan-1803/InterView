@@ -14,7 +14,8 @@ export class ContradoServiceService {
   }
 
   getNewYorkTimesData():Observable<ResponseResult>{
-    return this.customServiceService.get(Contrado_Constants.URL + 'Contrado');
+    console.log(Contrado_Constants.URL + 'Contrado/'+ Contrado_Constants.API_KEY)
+    return this.customServiceService.get(Contrado_Constants.URL + 'Contrado/'+ Contrado_Constants.API_KEY);
   }
 
 }
