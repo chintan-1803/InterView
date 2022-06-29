@@ -39,21 +39,6 @@ namespace ContradoChallenge.Migrations
                     b.ToTable("Des_Facet");
                 });
 
-            modelBuilder.Entity("ContradoChallenge.Models.Employee", b =>
-                {
-                    b.Property<int>("EmployeeId")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int")
-                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
-
-                    b.Property<string>("EmployeeName")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("EmployeeId");
-
-                    b.ToTable("Employee");
-                });
-
             modelBuilder.Entity("ContradoChallenge.Models.Geo_Facet", b =>
                 {
                     b.Property<int>("id")

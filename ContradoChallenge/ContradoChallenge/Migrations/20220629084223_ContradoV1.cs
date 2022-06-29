@@ -8,19 +8,6 @@ namespace ContradoChallenge.Migrations
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.CreateTable(
-                name: "Employee",
-                columns: table => new
-                {
-                    EmployeeId = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
-                    EmployeeName = table.Column<string>(type: "nvarchar(max)", nullable: true)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_Employee", x => x.EmployeeId);
-                });
-
-            migrationBuilder.CreateTable(
                 name: "Result",
                 columns: table => new
                 {
@@ -183,9 +170,6 @@ namespace ContradoChallenge.Migrations
         {
             migrationBuilder.DropTable(
                 name: "Des_Facet");
-
-            migrationBuilder.DropTable(
-                name: "Employee");
 
             migrationBuilder.DropTable(
                 name: "Geo_Facet");

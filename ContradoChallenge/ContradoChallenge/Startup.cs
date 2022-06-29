@@ -42,7 +42,7 @@ namespace ContradoChallenge
                 app.UseDeveloperExceptionPage();
             }
 
-            context.Seed();
+            //context.Seed();
 
             app.UseHttpsRedirection();
             app.UseCors(builder =>

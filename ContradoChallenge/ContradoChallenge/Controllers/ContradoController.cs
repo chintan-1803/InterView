@@ -4,9 +4,9 @@ using ContradoChallenge.Context;
 using System.Threading.Tasks;
 using System.Net.Http;
 using Newtonsoft.Json;
-using System;
 using System.Collections.Generic;
-// For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+using Microsoft.Extensions.Configuration;
+
 
 namespace ContradoChallenge.Controllers
 {
@@ -15,27 +15,26 @@ namespace ContradoChallenge.Controllers
     public class ContradoController : ControllerBase
     {
         private ContradoContext _contradoContext;
-        static HttpClient client = new HttpClient();
+        private IConfiguration _configuration { get; }
+        private HttpClient client = new HttpClient();
 
-        public ContradoController(ContradoContext contradoContext)
+        public ContradoController(ContradoContext contradoContext,IConfiguration configuration)
         {
             this._contradoContext = contradoContext;
+            this._configuration = configuration;
         }
-        [HttpGet]
+        [HttpGet("{apiKey}")]
         //public IEnumerable<Employee> Get()
-        
-        public async Task<APIResponse> Get()
+        public async Task<APIResponse> Get(string apiKey)
         {
-            string APIKey = "EdZfbCGDF8b6OHnqL55KRuGhQnzzDAyH";
-            string iAPIKey = "EdZfbCGDF8b6OHnqL55KRuGhQnzzDAyH";
-            string APIURL = "https://api.nytimes.com/svc/topstories/v2/home.json?api-key=";
             APIResponse response = new APIResponse();
-            if (APIKey == iAPIKey)
+            if (this._configuration["ThirdPartyAPIURL"] != "" && this._configuration["ThirdPartyAPIURL"] != null)
             {
+                string APIURL = this._configuration["ThirdPartyAPIURL"];
                 string result = "";
                 try
-                {                    
-                    result = await client.GetStringAsync(APIURL+iAPIKey);
+                {
+                    result = await this.client.GetStringAsync(APIURL + apiKey);
                 }
                 catch (System.Exception ex)
                 {
@@ -46,7 +45,7 @@ namespace ContradoChallenge.Controllers
                 if (result.Length > 0)
                 {
                     ThirdPartyAPIResponse finalResponse = JsonConvert.DeserializeObject<ThirdPartyAPIResponse>(result);
-                    
+
                     SaveData(finalResponse);
                     response.status = "Pass";
                     response.message = "Required operation is successfully done.";
@@ -55,7 +54,7 @@ namespace ContradoChallenge.Controllers
             else
             {
                 response.status = "Fail";
-                response.message = "Invalid API Key.";
+                response.message = "API URL not found.";
             }
             return response;
         }
@@ -71,35 +70,29 @@ namespace ContradoChallenge.Controllers
                 List<Geo_Facet> geo_Facet = new List<Geo_Facet>();
                 List<Multimedia> multi_Media = new List<Multimedia>();
 
-                //int cnt = 0;
                 foreach (string objdesIn in objresult.des_facet)
                 {
-
                     des_Facet.Add(new Des_Facet { name = objdesIn });
                 }
 
-                //cnt = 0;
+                
                 foreach (string objorgIn in objresult.org_facet)
                 {
                     org_Facet.Add(new Org_Facet { name = objorgIn });
-                    //cnt++;
                 }
 
-                //cnt = 0;
+
                 foreach (string objperIn in objresult.per_facet)
                 {
                     per_Facet.Add(new Per_Facet { name = objperIn });
 
                 }
 
-                //cnt = 0;
                 foreach (string objgeoIn in objresult.geo_facet)
                 {
                     geo_Facet.Add(new Geo_Facet { name = objgeoIn });
-                    //cnt++;
                 }
 
-                //cnt = 0;
                 foreach (Multimedia1 objmedia in objresult.multimedia)
                 {
                     multi_Media.Add(new Multimedia
@@ -111,7 +104,6 @@ namespace ContradoChallenge.Controllers
                         type = objmedia.type,
                         subtype = objmedia.subtype,
                         copyright = objmedia.copyright
-                        //cnt++;
                     });
                 }
 
@@ -142,8 +134,8 @@ namespace ContradoChallenge.Controllers
         }
 
         // GET api/<ContradoController>/5
-        [HttpGet("{id}")]
-        public string Get(int id)
+        [HttpGet]
+        public string Get()
         {
             return "value";
         }

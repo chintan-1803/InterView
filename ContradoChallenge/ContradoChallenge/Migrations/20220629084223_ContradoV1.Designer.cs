@@ -10,7 +10,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace ContradoChallenge.Migrations
 {
     [DbContext(typeof(ContradoContext))]
-    [Migration("20220628144028_ContradoV1")]
+    [Migration("20220629084223_ContradoV1")]
     partial class ContradoV1
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -39,21 +39,6 @@ namespace ContradoChallenge.Migrations
                     b.HasIndex("resultId");
 
                     b.ToTable("Des_Facet");
-                });
-
-            modelBuilder.Entity("ContradoChallenge.Models.Employee", b =>
-                {
-                    b.Property<int>("EmployeeId")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int")
-                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
-
-                    b.Property<string>("EmployeeName")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("EmployeeId");
-
-                    b.ToTable("Employee");
                 });
 
             modelBuilder.Entity("ContradoChallenge.Models.Geo_Facet", b =>
