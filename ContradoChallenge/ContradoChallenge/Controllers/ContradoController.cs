@@ -23,6 +23,7 @@ namespace ContradoChallenge.Controllers
         }
         [HttpGet]
         //public IEnumerable<Employee> Get()
+        
         public async Task<APIResponse> Get()
         {
             string APIKey = "EdZfbCGDF8b6OHnqL55KRuGhQnzzDAyH";
@@ -45,6 +46,7 @@ namespace ContradoChallenge.Controllers
                 if (result.Length > 0)
                 {
                     ThirdPartyAPIResponse finalResponse = JsonConvert.DeserializeObject<ThirdPartyAPIResponse>(result);
+                    
                     SaveData(finalResponse);
                     response.status = "Pass";
                     response.message = "Required operation is successfully done.";
@@ -132,7 +134,7 @@ namespace ContradoChallenge.Controllers
                     org_facet = org_Facet,
                     per_facet = per_Facet,
                     geo_facet = geo_Facet,
-                    short_url = objresult.url,
+                    short_url = objresult.short_url,
                     multimedia = multi_Media
                 });
             }

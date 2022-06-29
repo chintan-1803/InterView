@@ -61,11 +61,6 @@ C:\Users\chintan.dave\Desktop\Contrado\ContradoChallenge\ContradoChallenge\obj\D
 C:\Users\chintan.dave\Desktop\Contrado\ContradoChallenge\ContradoChallenge\obj\Debug\netcoreapp3.1\ContradoChallenge.pdb
 C:\Users\chintan.dave\Desktop\Contrado\ContradoChallenge\ContradoChallenge\obj\Debug\netcoreapp3.1\ContradoChallenge.genruntimeconfig.cache
 C:\Users\chintan.dave\Desktop\Contrado\ContradoChallenge\ContradoChallenge\obj\Debug\netcoreapp3.1\ContradoChallenge.csproj.AssemblyReference.cache
-C:\Users\chintan.dave\Desktop\InterView\ContradoChallenge\ContradoChallenge\obj\Debug\netcoreapp3.1\ContradoChallenge.csproj.AssemblyReference.cache
-C:\Users\chintan.dave\Desktop\InterView\ContradoChallenge\ContradoChallenge\obj\Debug\netcoreapp3.1\ContradoChallenge.AssemblyInfoInputs.cache
-C:\Users\chintan.dave\Desktop\InterView\ContradoChallenge\ContradoChallenge\obj\Debug\netcoreapp3.1\ContradoChallenge.AssemblyInfo.cs
-C:\Users\chintan.dave\Desktop\InterView\ContradoChallenge\ContradoChallenge\obj\Debug\netcoreapp3.1\ContradoChallenge.csproj.CoreCompileInputs.cache
-C:\Users\chintan.dave\Desktop\InterView\ContradoChallenge\ContradoChallenge\obj\Debug\netcoreapp3.1\ContradoChallenge.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\chintan.dave\Desktop\InterView\ContradoChallenge\ContradoChallenge\bin\Debug\netcoreapp3.1\appsettings.Development.json
 C:\Users\chintan.dave\Desktop\InterView\ContradoChallenge\ContradoChallenge\bin\Debug\netcoreapp3.1\appsettings.json
 C:\Users\chintan.dave\Desktop\InterView\ContradoChallenge\ContradoChallenge\bin\Debug\netcoreapp3.1\ContradoChallenge.exe
@@ -119,6 +114,10 @@ C:\Users\chintan.dave\Desktop\InterView\ContradoChallenge\ContradoChallenge\bin\
 C:\Users\chintan.dave\Desktop\InterView\ContradoChallenge\ContradoChallenge\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.pdb
 C:\Users\chintan.dave\Desktop\InterView\ContradoChallenge\ContradoChallenge\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
 C:\Users\chintan.dave\Desktop\InterView\ContradoChallenge\ContradoChallenge\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\chintan.dave\Desktop\InterView\ContradoChallenge\ContradoChallenge\obj\Debug\netcoreapp3.1\ContradoChallenge.AssemblyInfoInputs.cache
+C:\Users\chintan.dave\Desktop\InterView\ContradoChallenge\ContradoChallenge\obj\Debug\netcoreapp3.1\ContradoChallenge.AssemblyInfo.cs
+C:\Users\chintan.dave\Desktop\InterView\ContradoChallenge\ContradoChallenge\obj\Debug\netcoreapp3.1\ContradoChallenge.csproj.CoreCompileInputs.cache
+C:\Users\chintan.dave\Desktop\InterView\ContradoChallenge\ContradoChallenge\obj\Debug\netcoreapp3.1\ContradoChallenge.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\chintan.dave\Desktop\InterView\ContradoChallenge\ContradoChallenge\obj\Debug\netcoreapp3.1\staticwebassets\ContradoChallenge.StaticWebAssets.Manifest.cache
 C:\Users\chintan.dave\Desktop\InterView\ContradoChallenge\ContradoChallenge\obj\Debug\netcoreapp3.1\staticwebassets\ContradoChallenge.StaticWebAssets.xml
 C:\Users\chintan.dave\Desktop\InterView\ContradoChallenge\ContradoChallenge\obj\Debug\netcoreapp3.1\scopedcss\bundle\ContradoChallenge.styles.css
@@ -127,3 +126,4 @@ C:\Users\chintan.dave\Desktop\InterView\ContradoChallenge\ContradoChallenge\obj\
 C:\Users\chintan.dave\Desktop\InterView\ContradoChallenge\ContradoChallenge\obj\Debug\netcoreapp3.1\ContradoChallenge.dll
 C:\Users\chintan.dave\Desktop\InterView\ContradoChallenge\ContradoChallenge\obj\Debug\netcoreapp3.1\ContradoChallenge.pdb
 C:\Users\chintan.dave\Desktop\InterView\ContradoChallenge\ContradoChallenge\obj\Debug\netcoreapp3.1\ContradoChallenge.genruntimeconfig.cache
+C:\Users\chintan.dave\Desktop\InterView\ContradoChallenge\ContradoChallenge\obj\Debug\netcoreapp3.1\ContradoChallenge.csproj.AssemblyReference.cache

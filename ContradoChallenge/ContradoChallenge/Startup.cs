@@ -29,7 +29,8 @@ namespace ContradoChallenge
         {
             services.AddControllers();
             services.AddDbContext<ContradoContext>(options => options.UseSqlServer(Configuration.GetConnectionString("ContradoDatabase")));
-            services.AddMvc().AddNewtonsoftJson();   
+            services.AddMvc().AddNewtonsoftJson();
+            services.AddCors();
         }
 
 
@@ -44,6 +45,14 @@ namespace ContradoChallenge
             context.Seed();
 
             app.UseHttpsRedirection();
+            app.UseCors(builder =>
+            {
+                builder
+                .AllowAnyOrigin()
+                .AllowAnyMethod()
+                .AllowAnyHeader();
+            });
+
 
             app.UseRouting();
 
@@ -53,6 +62,8 @@ namespace ContradoChallenge
             {
                 endpoints.MapControllers();
             });
+
+    
         }
     }
 }
