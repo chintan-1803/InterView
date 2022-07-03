@@ -110,7 +110,7 @@ Procedures allow SELECT and other DML (I/U/D) statements.Functions only allow se
 
 16. Primary Key vs Unique Key
 
-Any SQL table will only one primary key which by default generates clustered index. Primary key can be created with multiple columns.
+Any SQL table will only have one primary key which by default generates clustered unique index. Primary key can be created with multiple columns.
 
 While any table can have multiple unique keys which by default generates non clustered index. A sinlge null value will be accepted in unique key column. If unique key is made by using multiple columns then once null is inserted for any one column then it won't allow null for other column as well.
 
