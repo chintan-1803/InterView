@@ -41,13 +41,13 @@ Converting a value type to a reference type is called called boxing in C# and co
 
 6. What is https ? https://www.youtube.com/watch?v=CfQ2INQHkHU,https://www.tutorialsteacher.com/https/what-is-https
 
-Https is the advanced version of https protocol which makes communication encrypted happenned between browser and server on which sites are deployed. Nowadays, using Https protocol is quite common to avoid unwanted attacks by hackers. We can use this protocol by installing SSL certificate on web server. Nowadays Google also provides priority to https site while giving results back according to your search.
+Https is the advanced version of http protocol which makes communication encrypted happenned between browser and server on which sites are deployed. Nowadays, using Https protocol is quite common to avoid unwanted attacks by hackers. We can use this protocol by installing SSL certificate on web server. Nowadays Google also provides priority to https site while giving results back according to your search.
 
 7. From where can we have SSL certificate ? Is there any costing for SSL certificate ?
 
 8. memory leak in .net -- youtube.com/watch?v=eu_kTGv61WQ
 
-Memory leak in .net is an unfortunated situation in which memory by certain objects is kept being utilised after their purposes fulfilled. For example, objects of stream writers classes and other objects interacting with database keep using resource and memory after their purposes fulfilled which cause memory leak and death of memory in application server. 
+Memory leak in .net is an unfortunated situation in which memory by certain objects is kept being utilised after their purposes fulfilled. For example, objects of stream writers classes and other objects interacting with database keep using resource and memory after their purposes fulfilled which cause memory leak and dearth of memory in application server. 
 
 
 9. What is garbage collector ?
@@ -72,7 +72,7 @@ Advantages of interface
 Interfaces can not contain fields.Abstract class can have fields.
 Abstract class may have implementation for few of the members where Interface does not have implementation for any of its members.
 Interface members are public by default,For Abstract class, default access modifier is private for its members.
-Abstract class can inherit from another abstract class or interface.
+Abstract class can inherit  another abstract class or interface.
 
 C# allows the user to inherit one interface into another interface. When a class implements the inherited interface then it must provide the implementation of all the members that are defined within the interface inheritance chain.
 
