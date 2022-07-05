@@ -972,3 +972,28 @@ interface Imethods {
 Public class B : A,Imethods
 {
 }
+
+
+Contrado Questions:
+1. Can we have private constructors?
+2. Can we have variable of Interface as return type for any function ?
+3. Can foreign key accept NULL values?
+4. Is SQL case sensitive?
+5. Please make sure that you have enough details to speak about of each project on which you have worked on
+6. Char vs NVarchar VS Varchar
+7. Can we set up case sensitivity on specific table in SQL?
+8. Can we create non clustered index on primary key?
+9. Example of dependency injection in C#
+10. What is typescript ?
+11. Filters in MVC
+12. Explain different API return status codes
+13. 201 vs 200 (API return status codes)
+14. What is caching in C#?
+15. ORM techniques in C#
+16. What is stack trace ? What data does it contain?
+17. Callback -- Promise -- Observable
+18. Types of dependency injection
+19. What are changes in Angular project and .Net?
+
+
+
