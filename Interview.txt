@@ -994,6 +994,7 @@ Contrado Questions:
 17. Callback -- Promise -- Observable
 18. Types of dependency injection
 19. What are changes in Angular project and .Net?
+20.  Protected Internal acess modifier -- Can we have this type of combination of access modifiers?
 
 
 
