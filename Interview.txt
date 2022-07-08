@@ -244,10 +244,11 @@ There is no difference between String and string.
 
 NameSpace : String (System Namespace) Vs StringBuilder (System.Text)
 
-String variable is immutable while object of StringBuilder is mutable. Wheneevr we assign or make any operations on string variable,it wil create new instance in the memory.
+String variable is immutable (unchangable) while object of StringBuilder is mutable(changable). Wheneevr we assign or make any operations on string variable,it will create new instance in the memory.
 
 Instance of StringBuilder is mutable which means any operations performed on the instance does not create new instance.
 
+Performance of application may degrade with too many operations on string objects as every operation does create new instance in the memory which will be removed by Garbage collector.
 
 
 
