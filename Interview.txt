@@ -250,7 +250,11 @@ Instance of StringBuilder is mutable which means any operations performed on the
 
 Performance of application may degrade with too many operations on string objects as every operation does create new instance in the memory which will be removed by Garbage collector.
 
+25. INT types in SQL
 
+TINYINT (1 Byte Storage) -- SMALLINT (2 byte Storage) -- INT (4 byte Storage) -- BIGINT (8 byte Storage)
+
+TINYINT -- Value Range 0 - 255
 
 desgin patterns
 
