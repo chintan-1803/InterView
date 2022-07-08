@@ -221,7 +221,19 @@ varchar variables can store ASCII charcters while nvarchar variable can store Un
 
 In ideal sitution, we must use varchar or nvarchar only based on need of whether we are required to store ASCII values of unicode characters
 
+21. What are callback function ?
 
+A callback function is a function which is required to be executed once the required task of parent function is done. Normally these functions are passed as parameter in another function.
+
+Simplest example of callback function we can observe is in ajax HTTP request call where we assign function to success property of object passed to ajax method and relevant function will be called once we receive successful data back.
+
+To the best my knowledge, other event listeners which we add in javascript are also considered as Callbacks.
+
+22. What is Anonymous function?
+
+Anonymous function is a function without name and defined runtime in javascript. These functions are generally used to define callbacks.
+
+23. Promise vs Observables in Angular ?
 
 desgin patterns
 
