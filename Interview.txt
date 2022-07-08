@@ -256,6 +256,14 @@ TINYINT (1 Byte Storage) -- SMALLINT (2 byte Storage) -- INT (4 byte Storage) --
 
 TINYINT -- Value Range 0 - 255
 
+
+26. How to get IP address of host in C#?
+	    Using System.Net; 	
+            IPHostEntry test = Dns.GetHostEntry(Dns.GetHostName());
+            IPAddress ip = test.AddressList[0];
+            Console.Write(ip.ToString());
+
+
 desgin patterns
 
 dependency injection. 
