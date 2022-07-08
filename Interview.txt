@@ -235,6 +235,22 @@ Anonymous function is a function without name and defined runtime in javascript.
 
 23. Promise vs Observables in Angular ?
 
+
+
+
+24. String vs StringBuilder in C# ?
+
+There is no difference between String and string. 
+
+NameSpace : String (System Namespace) Vs StringBuilder (System.Text)
+
+String variable is immutable while object of StringBuilder is mutable. Wheneevr we assign or make any operations on string variable,it wil create new instance in the memory.
+
+Instance of StringBuilder is mutable which means any operations performed on the instance does not create new instance.
+
+
+
+
 desgin patterns
 
 dependency injection. 
