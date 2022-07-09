@@ -9,8 +9,8 @@ Basically there are four accessmodifiers in C#.
 2. Private : Members declared private can be accessed within the class only.
 3. Protected : Members delared proctected can be accessed within class and in derived class only.
 4. internal: Members declared internal can be accessed with object of class anaywhere in the same assembly (namespace) and they can not be accessed from other assembly (namespace) 
-5. protected internal : Access is limited to the current assembly or types derived from the containing class.
-6. private protected :Access is limited to the containing class or types derived from the containing class within the current assembly. Available since C# 7.2.
+5. protected internal : protected internal means "protected OR internal" (any class in the same assembly, or any derived class - even if it is in a different assembly)
+6. private protected : Access is limited to the containing class or types derived from the containing class within the current assembly. Available since C# 7.2.
 
 https://www.programiz.com/csharp-programming/access-modifiers#:~:text=In%20C%23%2C%20access%20modifiers%20specify,can%20be%20accessed%20from%20anywhere
 
