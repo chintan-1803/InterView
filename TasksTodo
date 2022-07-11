@@ -44,4 +44,4 @@ public GeneratePDF(HTMLElement) {
 --ng g component nameComponent --module=app.module.ts
 
 
-Personal Access Token : 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
+Personal Access Token : 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
