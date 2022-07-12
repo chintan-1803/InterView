@@ -12,6 +12,8 @@ Basically there are four accessmodifiers in C#.
 5. protected internal : protected internal means "protected OR internal" (any class in the same assembly, or any derived class - even if it is in a different assembly)
 6. private protected : Access is limited to the containing class or types derived from the containing class within the current assembly. Available since C# 7.2.
 
+procted internal members are accessed from other assembly while private protected does not. Verified in code.
+
 https://www.programiz.com/csharp-programming/access-modifiers#:~:text=In%20C%23%2C%20access%20modifiers%20specify,can%20be%20accessed%20from%20anywhere
 
 3. What is circular dependency ? --https://www.codeproject.com/Articles/616344/What-is-Circular-Dependency-and-How-Do-We-Resolve, https://www.youtube.com/watch?v=YAqjf8obonU
