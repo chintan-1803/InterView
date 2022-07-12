@@ -75,7 +75,7 @@ Advantages of interface
 
 Interfaces can not contain fields.Abstract class can have fields.
 Abstract class may have implementation for few of the members where Interface does not have implementation for any of its members.
-Interface members are public by default,For Abstract class, default access modifier is private for its members.
+Interface members are public by default,For Abstract class, default access modifier is private for its members. -- Please check for this line.
 Abstract class can inherit  another abstract class or interface.
 
 C# allows the user to inherit one interface into another interface. When a class implements the inherited interface then it must provide the implementation of all the members that are defined within the interface inheritance chain.
