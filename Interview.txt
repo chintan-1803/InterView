@@ -268,6 +268,7 @@ TINYINT -- Value Range 0 - 255
             Console.Write(ip.ToString());
 27. What is dependency injection in C# ?
 
+https://www.youtube.com/watch?v=zQ4jOkp7SBA -- Go through this video for having explanation of each dependencies (constructor,property and method)
 https://www.tutorialspoint.com/explain-dependency-injection-in-chash
 
 desgin patterns
