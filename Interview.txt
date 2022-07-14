@@ -266,7 +266,9 @@ TINYINT -- Value Range 0 - 255
             IPHostEntry test = Dns.GetHostEntry(Dns.GetHostName());
             IPAddress ip = test.AddressList[0];
             Console.Write(ip.ToString());
+27. What is dependency injection in C# ?
 
+https://www.tutorialspoint.com/explain-dependency-injection-in-chash
 
 desgin patterns
 
