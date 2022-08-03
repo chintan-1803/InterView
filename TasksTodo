@@ -19,6 +19,7 @@ https://github.com/FERNman/angular-google-charts/issues/96 -- ChartReady Method 
 HtmltoPDF Conversion (html2pdf.js)
 https://www.npmjs.com/package/html2pdf.js/v/0.9.0
 
+public status: Subject<boolean> = new Subject<boolean>();
 public GeneratePDF(HTMLElement,fileName) {
     if(document.getElementById(HTMLElement)!= null)
     {
