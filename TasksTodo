@@ -19,18 +19,24 @@ https://github.com/FERNman/angular-google-charts/issues/96 -- ChartReady Method 
 HtmltoPDF Conversion (html2pdf.js)
 https://www.npmjs.com/package/html2pdf.js/v/0.9.0
 
-public GeneratePDF(HTMLElement) {
-    var element = document.getElementById(HTMLElement);
-    window.scrollTo(0, 0);
-    html2pdf(element, {
-      margin: 1,
-      filename: 'PropertyReport.pdf',
-      image: { type: 'jpeg', quality: 1 },
-      html2canvas: { scale: 5, logging: true },
-      jsPDF: { unit: 'mm', format: 'a4', orientation: 'p' }
-    });
-  }
-  
+public GeneratePDF(HTMLElement,fileName) {
+    if(document.getElementById(HTMLElement)!= null)
+    {
+        var element = document.getElementById(HTMLElement).innerHTML;
+        window.scrollTo(0, 0);
+        html2pdf().from(element).set(
+            {
+                margin: 1,
+                filename: fileName + '.pdf',
+                image: { type: 'png', quality: 1 },
+                //html2canvas: { scale: 2, logging: true },
+                jsPDF: { unit: 'mm', format: 'a4', orientation: 'landscape' }
+            }
+        ).save().then(()=>{
+            this.status.next(true);
+        });
+    }
+}
   3. Need to create Reactive forms in Angular and must implement custom validation in the same
 
 
