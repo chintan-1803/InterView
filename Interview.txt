@@ -1,3 +1,10 @@
+Techcronus Interviews:
+
+1. Need to understand code behind logic of dictionary object and how does the same work
+2. Need to get similar things for hash code or hash objects too
+
+
+
 1. What is encapsulation ??  
 -- Encapsulation is the process of restricting access of components (members and methods) within bigger body (object or class) by defining access modifiers.
 
