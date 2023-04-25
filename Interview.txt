@@ -5,6 +5,8 @@ Techcronus Interviews:
 3. Need to work on examples like parent and child classes and relevant oops concepts and access modifiers
 For example: https://www.techbeamers.com/csharp-oops-interview-questions-set-3/ -- Question
 
+https://www.indiabix.com/c-sharp-programming/questions-and-answers/
+
 1. What is encapsulation ??  
 -- Encapsulation is the process of restricting access of components (members and methods) within bigger body (object or class) by defining access modifiers.
 
