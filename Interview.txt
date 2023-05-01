@@ -1,3 +1,67 @@
+04/29/2023 -- .Net Interview quetions
+
+1. What is the purpose of bower.json ?
+
+2. What is the purpose of _ViewImports.cshtml ?
+
+3. What is the difference between Rest APIS and restful Services?
+
+4. What is Kestrel server used for ?
+
+5. What is .Net Profiler ?
+
+6. What is BCL ?
+
+7. What is OPENAPI ?
+
+8. What is Marshalling in C#?
+
+9. What is Boxing And Unboxing ?
+
+10. How can we prevent methods from being overriden in C# ?
+
+11. What is the purpose of partial and virtual keyword in C#?
+
+12. What is the location of profile file in .Net Core project ?
+
+13. What should one individual do for using session in .Net Core project ?
+
+14. Can we use ViewBag ub Action method which has RedirectToAction method inside ?
+
+15. We need to understand each and every line of .net core project file such startup.cs and program.cs file.
+
+16.What does CORS issue means ? What is the solution of the same ?
+
+17. Can we extract information from JSON Boyer JWT token ?
+
+18. Have you created any middleware in .net core ?
+
+19. How can we get root path of wwwroot folder in controller action method ?
+
+20. What is the purpose of app.useExceptionHandler in .Net Core ?
+
+21. Which version control mechanisms have you used?
+
+22. What is swagger editor ?
+
+23. What us delegate in C# ?
+
+24. Swapping of two variables values without using third variable.
+
+	int a = 10, b = 20;
+	Output a = 20, b = 10;
+	
+25. Datatable with 3 columns Id,Name,email and has 10 records. Syntax to fetch
+	row with id = 10 with C# datatable
+	What about getting max salary from databtable if relevant column is present in datatable ?
+
+
+
+
+
+
+
+
 Techcronus Interviews:
 
 1. Need to understand code behind logic of dictionary object and how does the same work
