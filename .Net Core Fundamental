@@ -1,1 +1,9 @@
+launchSettings.json file is used for the purpose of running application in developer machine only. It does not play any role in terms further environment. 
 
+For the deployment in other environments we can use appSettings.json file.
+
+launchSettings.json file has profiles defined which contain required information to run application in local developer machine. In profile section, we can also define 
+environment too. By default, there are two profiles one named as IIS Express and other will be named as similar to application name. When developer runs the application 
+by using IIS express, settings mentioned in relevant profile will be used. 
+
+On the other hand, when application is run by using .net core CLI at that time profile having similar name to application name will be used.
