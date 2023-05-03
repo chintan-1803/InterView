@@ -7,3 +7,9 @@ environment too. By default, there are two profiles one named as IIS Express and
 by using IIS express, settings mentioned in relevant profile will be used. 
 
 On the other hand, when application is run by using .net core CLI at that time profile having similar name to application name will be used.
+
+Earlier versions of .net core used to have two files name Program.cs and StartUp.cs. StartUp.cs file is called from program.cs
+
+Configure method of startUp.cs file is repsonsible for adding required middlewares for the project.
+
+Newer version of .Net core has removed file startup.cs and include relevant logic in Program.cs file only.
