@@ -27,3 +27,7 @@ https://www.youtube.com/watch?v=ttgqRyMPU9c -- YouTube Video Must Watch
 
 C#,VB.Net and F# which use CLR are called as managed languages. Code written in the same is not directly converted into Machine Code (Native instructions). It is 
 converted in intermediate code (binary code) first which will be later on converted into machine code by JIT compiler.
+
+Below is the URL in which flow of request and response has been mentioned in .Net core application:
+
+https://www.dotnetcurry.com/aspnet-core/middleware-in-aspnetcore#:~:text=In%20ASP.NET%20Core%2C%20middleware,request%20and%20produce%20a%20response.
