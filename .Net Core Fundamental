@@ -24,3 +24,6 @@ https://medium.com/@kunaltandon.kt/c-clr-il-jit-compilation-code-access-security
 https://www.geeksforgeeks.org/what-is-just-in-time-jit-compiler-in-dot-net/
 
 https://www.youtube.com/watch?v=ttgqRyMPU9c -- YouTube Video Must Watch
+
+C#,VB.Net and F# which use CLR are called as managed languages. Code written in the same is not directly converted into Machine Code (Native instructions). It is 
+converted in intermediate code (binary code) first which will be later on converted into machine code by JIT compiler.
