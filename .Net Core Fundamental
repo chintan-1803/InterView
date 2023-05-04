@@ -13,3 +13,12 @@ Earlier versions of .net core used to have two files name Program.cs and StartUp
 Configure method of startUp.cs file is repsonsible for adding required middlewares for the project.
 
 Newer version of .Net core has removed file startup.cs and include relevant logic in Program.cs file only.
+
+Program.cs file is available at the root level of .Net core project. This file is useful for registering services and middlewares.
+
+CLR (Common Language Runtime) is a run time engine in .Net framework which has JIT (Just in Time) compiler in it which converts the binary format of data (IL-- Intermediate
+Language,MSIL -- Microsoft Intermediate Language, CIL -- Common Intermediate Language) which is the result of the compilation of C# program into native instructions which will be 
+understood by CPU.
+
+https://medium.com/@kunaltandon.kt/c-clr-il-jit-compilation-code-access-security-explained-269124121f5
+https://www.geeksforgeeks.org/what-is-just-in-time-jit-compiler-in-dot-net/
