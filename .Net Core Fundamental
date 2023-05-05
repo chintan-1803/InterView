@@ -33,3 +33,5 @@ Below is the URL in which flow of request and response has been mentioned in .Ne
 https://www.dotnetcurry.com/aspnet-core/middleware-in-aspnetcore#:~:text=In%20ASP.NET%20Core%2C%20middleware,request%20and%20produce%20a%20response.
 
 https://stackoverflow.com/questions/55845137/what-are-services-and-why-add-them-in-asp-net-core
+
+https://learn.microsoft.com/en-us/aspnet/core/tutorials/web-api-help-pages-using-swagger?view=aspnetcore-7.0 -- Swagger vs OPENAPI
