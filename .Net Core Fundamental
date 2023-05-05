@@ -31,3 +31,5 @@ converted in intermediate code (binary code) first which will be later on conver
 Below is the URL in which flow of request and response has been mentioned in .Net core application:
 
 https://www.dotnetcurry.com/aspnet-core/middleware-in-aspnetcore#:~:text=In%20ASP.NET%20Core%2C%20middleware,request%20and%20produce%20a%20response.
+
+https://stackoverflow.com/questions/55845137/what-are-services-and-why-add-them-in-asp-net-core
