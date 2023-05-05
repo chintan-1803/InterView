@@ -1,4 +1,27 @@
-04/29/2023 -- .Net Interview quetions
+05/05/2023 -- .Net Core Interview quetions
+
+1. What kind of code we write in startup.cs file ?
+2. What is managed and unmanaged code ?
+3. What is enviroment in postman ? - initial value and current value
+4. What is swagger editor - swagger document
+5. What is collection tree in linq
+6. Authorize keyword in dot net core
+l2. Run() and Use() method of dotnet core.
+13. what is T modal
+14. How can we inject the service dependency into the view?
+15. Singleton and Transient and Scoped
+17. Which Azure services you have used?
+18. DataContext classes in dotnet core?
+19. What is middleware?
+20. Loosely coupled code and Tightly coupled code
+21. OutOfProcess, In Process Hosting in .Net core.
+22. Ref and Out keyword.
+23. CICD
+24. How to enforce Https for all requests in ASP.net Core
+25. What is the difference between IApplicationBuilder.Use() and IApplicationBuimodel
+
+
+04/29/2023 -- .Net Core Interview quetions
 
 1. What is the purpose of bower.json ?
 
