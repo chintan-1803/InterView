@@ -32,6 +32,19 @@ https://learn.microsoft.com/en-us/aspnet/core/mvc/views/dependency-injection?vie
 
 2. What is the purpose of _ViewImports.cshtml ?
 
+There are basically three common files in MVC .net core with different purposes like _Layout.cshtml, _ViewStart.cshtml, _viewImports.cshtml.
+
+_Layout.cshtml is used foe defining common header,footer and menu structure for each view to have.
+
+_ViewStart.cshtml is used to set common layout property of all views available in application. This makes quite easy for maintainance purposes.
+
+_ViewImports.cshtml is used for declaring all common namespaces in the same so that further in dedicated views the same declaration is not required to be made.
+
+
+
+https://www.youtube.com/watch?v=M9-sWo9vI1s&ab_channel=ErvisTrupja,https://www.c-sharpcorner.com/article/layout-and-viewstart-and-viewimports-in-asp-net-mvc-core-3-0/
+
+
 3. What is the difference between Rest APIS and restful Services?
 
 4. What is Kestrel server used for ?
