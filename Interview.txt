@@ -20,7 +20,15 @@ https://learn.microsoft.com/en-us/aspnet/core/mvc/views/dependency-injection?vie
 19. What is middleware?
 20. Loosely coupled code and Tightly coupled code
 21. OutOfProcess, In Process Hosting in .Net core.
+
 22. Ref and Out keyword.
+
+Both keywords are used to pass arguments in method or function. By both these keywords, we pass arguments as reference in function. In both cases, any changes in the same in calling method will reflect in the same once control returns to origin.
+
+Ref Keyword -- It is mandatory to initialize variable before passing the same in further function owging to which it is birectional value change approach.
+
+Out keyword -- It is not mandatory to initialize variable before passing the same in further function, but it is mandatory to assign or change value to the same variable in calling method owing to which it is unidirectional exachange of value.
+
 23. CICD
 24. How to enforce Https for all requests in ASP.net Core
 25. What is the difference between IApplicationBuilder.Use() and IApplicationBuimodel
@@ -49,11 +57,11 @@ https://www.youtube.com/watch?v=M9-sWo9vI1s&ab_channel=ErvisTrupja,https://www.c
 
 4. What is Kestrel server used for ?
 
-5. What is .Net Profiler ?
+5. What is .Net Profiler?
 
-6. What is BCL ?
+6. What is BCL?
 
-7. What is OPENAPI ?
+7. What is OPENAPI?
 
 8. What is Marshalling in C#?
 
