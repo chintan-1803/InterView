@@ -57,6 +57,9 @@ https://www.youtube.com/watch?v=M9-sWo9vI1s&ab_channel=ErvisTrupja,https://www.c
 
 8. What is Marshalling in C#?
 
+Marshalling is the process of transforming types when managed code is converted into unmanaged code (Native Code)
+
+
 9. What is Boxing And Unboxing ?
 
 10. How can we prevent methods from being overriden in C# ?
