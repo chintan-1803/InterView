@@ -29,6 +29,8 @@ Ref Keyword -- It is mandatory to initialize variable before passing the same in
 
 Out keyword -- It is not mandatory to initialize variable before passing the same in further function, but it is mandatory to assign or change value to the same variable in calling method owing to which it is unidirectional exachange of value.
 
+https://www.c-sharpcorner.com/UploadFile/ff2f08/ref-vs-out-keywords-in-C-Sharp/
+
 23. CICD
 24. How to enforce Https for all requests in ASP.net Core
 25. What is the difference between IApplicationBuilder.Use() and IApplicationBuimodel
