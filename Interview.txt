@@ -9,6 +9,9 @@
 l2. Run() and Use() method of dotnet core.
 13. what is T modal
 14. How can we inject the service dependency into the view?
+	We can inject services in view by using @inject keyword. Furthermore 
+	https://learn.microsoft.com/en-us/aspnet/core/mvc/views/dependency-injection?view=aspnetcore-7.0
+
 15. Singleton and Transient and Scoped
 17. Which Azure services you have used?
 18. DataContext classes in dotnet core?
