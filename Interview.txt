@@ -63,6 +63,10 @@ https://www.youtube.com/watch?v=M9-sWo9vI1s&ab_channel=ErvisTrupja,https://www.c
 
 11. What is the purpose of partial and virtual keyword in C#?
 
+Partial keyword gives functionality to divide code of class in more than parts. While partial methods are such methods for which we can define signature in partial class and the method implementation in other class for relevant partial class.
+
+https://www.geeksforgeeks.org/partial-methods-in-c-sharp/
+
 12. What is the location of profile file in .Net Core project ?
 
 13. What should one individual do for using session in .Net Core project ?
@@ -71,7 +75,7 @@ https://www.youtube.com/watch?v=M9-sWo9vI1s&ab_channel=ErvisTrupja,https://www.c
 
 15. We need to understand each and every line of .net core project file such startup.cs and program.cs file.
 
-16.What does CORS issue means ? What is the solution of the same ?
+16. What does CORS issue means ? What is the solution of the same ?
 
 17. Can we extract information from JSON Boyer JWT token ?
 
