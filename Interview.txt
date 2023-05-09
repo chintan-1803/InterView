@@ -1,3 +1,16 @@
+05-09-2023 -- Interview
+
+1. Globalization vs Localization in C#
+2. How to get student from student table having 10th rank based on total marks ? What happen if
+more than one student have similar marks ?
+	Answer: SELECT * from (SELECT Row_Number OVER (order by totalMarks DESC) as stdRank,* from Student) where stdrank = 10
+3. Which action filter have you used ?
+4. What is the difference in routing in MVC and routing in .net core?
+5. Searialization vs DeSearialization in C#
+6. Const vs Readonly
+7. What is Multicast Delegate ?
+
+
 05/05/2023 -- .Net Core Interview quetions
 
 1. What kind of code we write in startup.cs file ?
