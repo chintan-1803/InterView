@@ -9,6 +9,7 @@ more than one student have similar marks ?
 5. Searialization vs DeSearialization in C#
 6. Const vs Readonly
 7. What is Multicast Delegate ?
+8. AddSingleton vs AddTransient vs AddScoped in .Net Core
 
 
 05/05/2023 -- .Net Core Interview quetions
