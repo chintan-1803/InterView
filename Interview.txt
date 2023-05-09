@@ -1,6 +1,8 @@
 05-09-2023 -- Interview
 
 1. Globalization vs Localization in C#
+Globalization is the process creating your application to target multiple cultures in it by adding resource.resx files for each intended culture. While localization targets single culture.
+	https://www.c-sharpcorner.com/UploadFile/4d9083/what-is-globalization-and-localization-in-Asp-Net/
 2. How to get student from student table having 10th rank based on total marks ? What happen if
 more than one student have similar marks ?
 	Answer: SELECT * from (SELECT Row_Number OVER (order by totalMarks DESC) as stdRank,* from Student) where stdrank = 10
