@@ -1,3 +1,5 @@
+How to use built in logger class in .Net Core ?
+
 launchSettings.json file is used for the purpose of running application in developer machine only. It does not play any role in terms further environment. 
 
 For the deployment in other environments we can use appSettings.json file.
