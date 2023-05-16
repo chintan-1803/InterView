@@ -17,6 +17,11 @@ more than one student have similar marks ?
 3. Which action filter have you used ?
 	[OutputCache(Duration=100)]. I have used this one in MVC. And I think for .Net core we need to add middleware for performing or fulfilling similar purposes with attribute name on action method.
 4. What is the difference in routing in MVC and routing in .net core?
+
+In MVC application we have Routing.config file in which we have RegisterRoutes method in which we need to define routes for application to use.
+
+While in case of .Net Core application, routing is handled by app.UseRouting middleware. For conventional routing then we need to define endpoints by app.UseEndPoints method.
+
 5. Searialization vs DeSearialization in C#
 
 Searialization is the process of converting object into bytes stream so that the same can be stored in memory or file.
