@@ -30,6 +30,8 @@ While DeSearlization is the reverse process of converting bytes (genereated from
 
 https://www.c-sharpcorner.com/article/serialization-and-deserialization-in-c-sharp/
 
+https://www.youtube.com/watch?v=lYdcY5zulXA
+
 6. Const vs Readonly
 
 Const varibales must be assigned value at compile time and the same will never change. While for ReadOnly variables we assign value either at Runtime (But only in constructor of claass) or CompileTime.
