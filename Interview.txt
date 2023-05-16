@@ -15,7 +15,7 @@ Globalization is the process creating your application to target multiple cultur
 more than one student have similar marks ?
 	Answer: SELECT * from (SELECT Row_Number OVER (order by totalMarks DESC) as stdRank,* from Student) where stdrank = 10
 3. Which action filter have you used ?
-	[OutputCache(Duration=100)]
+	[OutputCache(Duration=100)]. I have used this one in MVC. And I think for .Net core we need to add middleware for performing or fulfilling similar purposes.
 4. What is the difference in routing in MVC and routing in .net core?
 5. Searialization vs DeSearialization in C#
 6. Const vs Readonly
