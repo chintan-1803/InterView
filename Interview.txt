@@ -23,6 +23,7 @@ Searialization is the process of converting object into bytes stream so that the
 
 While DeSearlization is the reverse process of converting bytes (genereated from file content) into object.
 
+https://www.c-sharpcorner.com/article/serialization-and-deserialization-in-c-sharp/
 
 6. Const vs Readonly
 7. What is Multicast Delegate ?
