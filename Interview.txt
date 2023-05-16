@@ -41,6 +41,8 @@ A multicast delegate holds reference of more than one handler functions.
 	Answer: https://dotnettutorials.net/lesson/multicast-delegate-csharp/
 8. AddSingleton vs AddTransient vs AddScoped in .Net Core
 
+https://www.c-sharpcorner.com/article/understanding-addtransient-vs-addscoped-vs-addsingleton-in-asp-net-core/
+
 
 05/05/2023 -- .Net Core Interview quetions
 
