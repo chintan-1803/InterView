@@ -1,3 +1,11 @@
+1. What is Metapackage in C# Asp.net Core?
+
+Metapackages describe a set of packages that are used together. Metapackages are referenced just like any other NuGet package. By referencing a metapackage, you have, in effect, added a reference to each of its dependent packages.
+
+Microsoft.AspNetCore.App is a metapackage which is added to all projects of .net core framework by default. It is nothing but combination of various packages required to run the application.
+
+
+
 05-09-2023 -- Interview
 
 1. Globalization vs Localization in C#
