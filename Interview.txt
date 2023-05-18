@@ -55,6 +55,8 @@ https://www.c-sharpcorner.com/article/understanding-addtransient-vs-addscoped-vs
 5. What is collection tree in linq
 6. Authorize keyword in dot net core
 l2. Run() and Use() method of dotnet core.
+     app.use() adds middleware to request pipeline and pass the request to next middleware while app.run() also adds middleware but after the same the request will be terminated and no further middleware will be called.
+	
 13. what is T modal
 14. How can we inject the service dependency into the view?
 We can inject services in view by using @inject keyword. Furthermore we can also inject configuration object too through which we can access information of 
