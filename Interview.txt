@@ -1,3 +1,8 @@
+1. Explaination about CORS:
+
+https://www.youtube.com/watch?v=Y9nyPlVrfvE
+
+
 1. What is Metapackage in C# Asp.net Core?
 
 Metapackages describe a set of packages that are used together. Metapackages are referenced just like any other NuGet package. By referencing a metapackage, you have, in effect, added a reference to each of its dependent packages.
