@@ -1,3 +1,28 @@
+23/05/2023
+
+1. What is generics in C#?
+2. IEnumerable vs IQueryable in C# ?
+3. AOT and JIT compilers for Angular. How do both work ?
+4. What are all Javascript datatypes available ?
+5. 1 2 3	1 4 7		
+   4 5 6 --->   2 5 8
+   7 8 9	3 6 9
+   (Input) 	(Output)
+  What will be sudo code for above case in C# ?
+ 6. What is ngRX and what is the purpose of the same in Angular ?
+ 7. What are different features of angular versions and they differe from each other ?
+ 8. What is the bootstraping process in Angular ? -- Index.html --> main.ts --> app.module bootstraped --> app.component bootstraped
+ 9. What are triggers in SQL?
+ 10. What are SQL constraints in SQL and types of the same?
+ 11. Angular.json vs Package.json in angular
+ 12. How to improve and what are steps to improve performance of SQL store procedure ?
+ 13. What is subject in Angular and purpose of the same?
+ 14. How to transfer data between different components which are not associated with each other as parent child relationship ? -- LocalStorage
+ 15. locationstorage vs sessionstorage
+ 16. What is interpolation in Angular?
+ 17.  If some array or object value which has been passed from .ts to html is not updated then how can we forcefully change the same ?
+ 18. 
+
 1. Explaination about CORS:
 
 https://www.youtube.com/watch?v=Y9nyPlVrfvE
