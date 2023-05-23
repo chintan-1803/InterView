@@ -21,7 +21,16 @@
  15. locationstorage vs sessionstorage
  16. What is interpolation in Angular?
  17.  If some array or object value which has been passed from .ts to html is not updated then how can we forcefully change the same ?
- 18. 
+
+Common questions asked for rating in one of companies
+	How much backend experience do you have building API's?
+	How strong are you on microservices?
+	What would you rate your Dependency Injection skills on a scale of 1-5? 
+	Module, Providers - injects in the constructors?
+	Mocking and stubbing?
+	Understanding the mechanics?
+	How much experience do you have in security vulnerabilities? 
+	Are you adept in SOLID principles?
 
 1. Explaination about CORS:
 
