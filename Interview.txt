@@ -145,6 +145,8 @@ https://www.geeksforgeeks.org/partial-methods-in-c-sharp/
 
 16. What does CORS issue means ? What is the solution of the same ?
 
+Access-Control-Allow-Origin header defines which domains are allowed to receive response sent from the server. * means all domains are allowed to receive the response. While in case of specific domain names, both names should be matched.
+
 17. Can we extract information from JSON Boyer JWT token ?
 
 18. Have you created any middleware in .net core ?
