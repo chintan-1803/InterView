@@ -1,3 +1,9 @@
+what is difference between shallow copy and deep copy?
+what is async and await in c#?
+what is concept of object pull of .net?
+what is areas in mvc?
+
+
 https://www.infoworld.com/article/3270935/how-to-use-elmah-for-error-logging-in-aspnet-core.html -- .Net Core logging mechanism used in calendly project done by pratik
 
 
