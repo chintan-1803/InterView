@@ -18,6 +18,7 @@ https://www.infoworld.com/article/3270935/how-to-use-elmah-for-error-logging-in-
 2. IEnumerable vs IQueryable in C# ?
 
 https://www.youtube.com/watch?v=J2u1DmnE9mU
+https://dotnettutorials.net/lesson/differences-between-ienumerable-and-iqueryable/
 
 
 3. AOT and JIT compilers for Angular. How do both work ?
