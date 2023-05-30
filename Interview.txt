@@ -16,6 +16,10 @@ https://www.infoworld.com/article/3270935/how-to-use-elmah-for-error-logging-in-
 
 1. What is generics in C#?
 2. IEnumerable vs IQueryable in C# ?
+
+https://www.youtube.com/watch?v=J2u1DmnE9mU
+
+
 3. AOT and JIT compilers for Angular. How do both work ?
 4. What are all Javascript datatypes available ?
 5. 1 2 3	1 4 7		
