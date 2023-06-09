@@ -30,6 +30,8 @@ https://dotnettutorials.net/lesson/differences-between-ienumerable-and-iqueryabl
    7 8 9	3 6 9
    (Input) 	(Output)
   What will be sudo code for above case in C# ?
+  https://www.w3resource.com/csharp-exercises/array/csharp-array-exercise-22.php
+  
  6. What is ngRX and what is the purpose of the same in Angular ?
  7. What are different features of angular versions and they differe from each other ?
  8. What is the bootstraping process in Angular ? -- Index.html --> main.ts --> app.module bootstraped --> app.component bootstraped
