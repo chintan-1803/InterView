@@ -9,6 +9,9 @@ what is async and await in c#?
 what is concept of object pull of .net?
 what is areas in mvc?
 
+Areas allow us to separate our modules in MVC project by organizing separate files like Model, View, Controller, Web.config and Routing registration file. They seem very much similar to modules what we have in Angular.
+
+https://www.c-sharpcorner.com/UploadFile/ansh06031982/areas-in-mvc-with-example/#:~:text=Areas%20allows%20you%20to%20separate,registration%20file%20into%20separate%20sections.&text=In%20live%20MVC%20Project%20implementation,%2C%20View%2C%20Controller%2C%20Web.
 
 https://www.infoworld.com/article/3270935/how-to-use-elmah-for-error-logging-in-aspnet-core.html -- .Net Core logging mechanism used in calendly project done by pratik
 
