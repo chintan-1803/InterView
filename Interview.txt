@@ -17,6 +17,7 @@ https://www.infoworld.com/article/3270935/how-to-use-elmah-for-error-logging-in-
 23/05/2023
 
 1. What is generics in C#?
+	Generics allow us to write a class or method that can work with any datatype.
 2. IEnumerable vs IQueryable in C# ?
 
 https://www.youtube.com/watch?v=J2u1DmnE9mU
