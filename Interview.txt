@@ -1,3 +1,5 @@
+https://codewithmukesh.com/blog/dapper-in-aspnet-core/ -- How to create .Net core API project from scratch
+
 
 What is service oriented architecture ?
 
