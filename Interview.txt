@@ -1,3 +1,11 @@
+
+23/06/2023 
+What are solid principles?
+What is normalization whether the same affects compute and storage?
+Write down code for fibonaci series:
+	https://www.javatpoint.com/fibonacci-series-in-csharp
+
+
 https://codewithmukesh.com/blog/dapper-in-aspnet-core/ -- How to create .Net core API project from scratch
 
 
