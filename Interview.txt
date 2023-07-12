@@ -1,4 +1,9 @@
 
+Most Important: Create Sample API resembling behaviour of below API . We need to ready to do all tasks Most Important:
+
+https://swapi.dev/
+
+
 23/06/2023 
 What are solid principles?
 What is normalization whether the same affects compute and storage?
