@@ -1,3 +1,10 @@
+Entity Framework Questions:
+
+What is ToListAsync and how does the same is different from ToList() ?
+
+What is AsNoTracking() ?
+
+
 
 SQL injection Overview:
 https://dotnettutorials.net/lesson/sql-injection-and-prevention-in-csharp-ado-net/
