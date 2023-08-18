@@ -1,4 +1,8 @@
 
+SQL injection Overview:
+https://dotnettutorials.net/lesson/sql-injection-and-prevention-in-csharp-ado-net/
+
+
 Most Important: Create Sample API resembling behaviour of below API . We need to ready to do all tasks Most Important:
 
 https://swapi.dev/
