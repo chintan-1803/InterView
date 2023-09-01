@@ -1,6 +1,8 @@
 
 https://timmousk.com/blog/git-remove-unpushed-commit/ -- How to undo unpushed code from local branch?
 
+git reset --soft HEAD~1
+
 Entity Framework Questions:
 
 What is ToListAsync and how does the same is different from ToList() ?
