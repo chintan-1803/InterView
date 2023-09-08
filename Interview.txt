@@ -1,3 +1,6 @@
+Ienumerable vs List in C#
+
+
 https://www.c-sharpcorner.com/article/using-the-cqrs-pattern-in-c-sharp/ -- CQRS pattern -- most IMP
 
 
