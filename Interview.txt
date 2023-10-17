@@ -1,3 +1,10 @@
+How to send JWT Authorization Token to all HTTP requests automatically in angular?
+
+For this thing we can use concept called HTTP_INTERCEPTORS. https://stackoverflow.com/questions/52468071/how-to-send-jwt-token-as-authorization-header-in-angular-6
+
+
+
+
 Ienumerable vs List in C#
 
 
