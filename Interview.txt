@@ -1,3 +1,45 @@
+10/22/2023 Interview Qustions
+
+1. Hooks in Angular
+2. Sample String having alphabets only: zzzzzaaaaakkk --- Write sudo code to calculate count of characters from a to z?
+3. Write sudo code for below conversion
+   one two three
+   eerht owt eno
+	How we are going to reverse string in above section?
+4. 
+
+for(var i = 0;i<5;i++)
+{
+    console.log(i);
+}
+console.log(i); -- What is the output of above code and what will be of output if we use let instead of var over here.
+
+5. What is scope hierarchy in Angular?
+
+6. Ways to transfer data from one component to another in Angular ?
+7. Difference between package.json vs package.lock.json ?
+8. IEnumerable vs IQueryable ?
+9. How to handle memory leaks in .net ? How we come to know about the same?
+10. Which is better between store procedure vs sql function in the context of performance ?
+11. Disadvantages of too many indexes in sql
+12. What kind of scheduling JOBs have you worked upon? Hangfire scheduling jobs?
+13. router-outlet in angular
+14. decorators in angular
+15. const vs readonly in C#
+16. Purpose of export keyword in angular class
+17. Promise vs Observable in angular
+18. Pipes in angular
+19. Lazy loading vs Eager loading in angular
+20. How does the entire JWT token work in angular front end and API server? How can we pass token received from server back to the same in each request  ? We can use interceptor over here
+21. How can we verify the idle time of user not doing anything and come back again on the browser and hit the button? -- Jwt expire time and session expire something like that
+22. How can we handle errors in JOBs running in queue ? Is there any retry mechanism or not ?
+
+
+
+
+
+
+
 How to send JWT Authorization Token to all HTTP requests automatically in angular?
 
 For this thing we can use concept called HTTP_INTERCEPTORS. https://stackoverflow.com/questions/52468071/how-to-send-jwt-token-as-authorization-header-in-angular-6
