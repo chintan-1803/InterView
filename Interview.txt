@@ -1,4 +1,14 @@
-10/22/2023 Interview Qustions
+Solid Principles in C#
+
+S (Single Resposibility Principle)
+O (Open Closed Principle)
+L (Liskov Substitution Principle)
+I (Interface segregation principle)
+D (Dependency Inversion Principle)
+
+
+
+10/22/2023 Interview Questions
 
 1. Hooks in Angular
 2. Sample String having alphabets only: zzzzzaaaaakkk --- Write sudo code to calculate count of characters from a to z?
