@@ -1,3 +1,6 @@
+How to call three (more than one) functions in parallel in C sharp ? What are the possible options ?
+
+
 Solid Principles in C#
 
 S (Single Resposibility Principle)
