@@ -1,3 +1,7 @@
+https://sbsharma.com/component-declared-by-more-than-one-module/  -- How to call common directive or component from multiple modules -- IMP
+
+
+
 How to call three (more than one) functions in parallel in C sharp ? What are the possible options ?
 
 
