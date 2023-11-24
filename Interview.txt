@@ -1,3 +1,6 @@
+What is SSL certificate in layman terms and how the same is related with web development and deployment ?
+
+
 https://sbsharma.com/component-declared-by-more-than-one-module/  -- How to call common directive or component from multiple modules -- IMP
 
 
