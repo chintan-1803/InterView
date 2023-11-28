@@ -1,3 +1,6 @@
+https://balsamiq.com/# -- This is the tool which can be used to create simple but effective UI in sketch format by anyone having basic knowledge of software.
+
+
 What is SSL certificate in layman terms and how the same is related with web development and deployment ?
 
 
