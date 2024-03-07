@@ -27,6 +27,9 @@ D (Dependency Inversion Principle)
 
 1. Hooks in Angular
 2. Sample String having alphabets only: zzzzzaaaaakkk --- Write sudo code to calculate count of characters from a to z?
+	https://dotnettutorials.net/lesson/character-occurrence-in-a-string-csharp/
+
+
 3. Write sudo code for below conversion
    one two three
    eerht owt eno
