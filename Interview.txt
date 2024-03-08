@@ -1,3 +1,14 @@
+
+##################### Important Link : Indian Government Site for technical Courses #####################
+
+https://nptel.ac.in/initiative
+
+https://nptel.ac.in/courses/106105152 -- Machine Learning
+
+https://nptel.ac.in/courses/106102220 -- Artificial Intelligence 
+
+##################### Important Link : Indian Government Site for technical Courses #####################
+
 What is the advantage of using own Identity server for login purpose ?
 
 https://balsamiq.com/# -- This is the tool which can be used to create simple but effective UI in sketch format by anyone having basic knowledge of software.
