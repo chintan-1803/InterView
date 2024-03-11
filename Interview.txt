@@ -1,3 +1,9 @@
+##################### OCR Third Party API #####################
+
+https://www.ocrwebservice.com/api/restguide
+
+##################### OCR Third Party API #####################
+
 
 ##################### Important Link : Indian Government Site for technical Courses #####################
 
