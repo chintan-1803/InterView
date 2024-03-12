@@ -1,3 +1,6 @@
+SonarLint Extension for visual studio Linter to detect and fix coding issues locally in C#, VB.NET, C, C++, JS, TS and CSS code. Use with SonarQube and SonarCloud for optimal team performance.
+
+
 ##################### OCR Third Party API #####################
 
 https://www.ocrwebservice.com/api/restguide
