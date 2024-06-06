@@ -1,3 +1,12 @@
+What is Expression in EntityFramework core ?
+
+ private static Expression<Func<TcfScope, string>> SortByProductCategory()
+        {
+            return o => o.TcfScopeProductTransactions.Where(x => x.Active == true).Select(x => x.Product.ProductCategoryNavigation.Name).FirstOrDefault();
+        }
+
+
+
 #####################  SonarLint Extension for visual studio Linter to detect and fix coding issues locally in C#, VB.NET, C, C++, JS, TS and CSS code. Use with SonarQube and SonarCloud for optimal team performance. ##################### 
 
 
