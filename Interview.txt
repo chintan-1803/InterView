@@ -1,3 +1,5 @@
+https://jobs.swagapp.com/AU  -- Job Portal for Australia
+
 What is Microsoft .Net Core Aspire ?
 https://learn.microsoft.com/en-us/dotnet/aspire/get-started/aspire-overview 
 
