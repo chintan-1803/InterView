@@ -1,3 +1,6 @@
+What is Microsoft .Net Core Aspire ?
+https://learn.microsoft.com/en-us/dotnet/aspire/get-started/aspire-overview 
+
 What is Expression in EntityFramework core ?
 
  private static Expression<Func<TcfScope, string>> SortByProductCategory()
