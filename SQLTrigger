@@ -1,0 +1,147 @@
+Hitstory Table from ESign
+
+-- Actual Table definition
+CREATE TABLE [dbo].[Tbl_TechnologyMaster](
+	[TechnologyId] [int] IDENTITY(1,1) NOT NULL,
+	[TechnologyName] [varchar](100) NULL,
+	[IsActive] [bit] NULL,
+	[Description] [nvarchar](max) NULL,
+	[create_user] [nvarchar](50) NULL,
+	[create_date] [datetime] NULL,
+	[change_user] [nvarchar](50) NULL,
+	[change_date] [datetime] NULL,
+	[IsDeleted] [bit] NULL,
+ CONSTRAINT [PK_Tbl_TechnologyMaster] PRIMARY KEY CLUSTERED 
+(
+	[TechnologyId] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
+GO
+
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+-- Audit Table definition
+CREATE TABLE [dbo].[Tbl_Audit_TechnologyMaster](
+	[auditId] [int] IDENTITY(1,1) NOT NULL,
+	[TechnologyId] [int] NOT NULL,
+	[change_date] [datetime] NULL,
+	[change_user] [varchar](50) NULL,
+	[change_category] [nvarchar](50) NULL,
+	[field] [nvarchar](50) NULL,
+	[previous_value] [nvarchar](200) NULL,
+	[changed_to_value] [nvarchar](200) NULL,
+ CONSTRAINT [PK_Tbl_Audit_TechnologyMaster] PRIMARY KEY CLUSTERED 
+(
+	[auditId] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+-- Function which is used in trigger to generate history
+USE [CMS]
+GO
+/** Object:  UserDefinedFunction [dbo].[fn_IsBitSetInBitmask]    Script Date: 28-06-2024 04:27:03 PM **/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+ALTER function [dbo].[fn_IsBitSetInBitmask]  
+(@bitmask varbinary(500), @colid int)  
+    returns int  
+as  
+begin  
+    declare @word smallint  
+    declare @bit  smallint  
+    declare @mask binary(2)  
+    declare @mval int  
+    declare @oldword binary(2)    
+    if @colid < 1 return 0  
+    SELECT @word = 1 + FLOOR((@colid -1)/16)  
+    SELECT @bit = (@colid -1) % 16  
+    SELECT @mval = POWER(2, @bit)  
+    SELECT @mask = convert( binary(2), unicode( substring( convert( nchar(2), convert( binary(4), @mval ) ), 2, 1 ) ) )  
+    SELECT @oldword = convert( binary(2), SUBSTRING( convert( nvarchar(64),@bitmask), @word, 1) )  
+    IF @oldword IS NULL return 0  
+    return  convert( smallint, @oldword ) & convert( smallint, @mask )  
+end
+
+
+-- trigger to generate history
+USE [Test]
+GO
+/** Object:  Trigger [dbo].[ta_Tbl_TechnologyMaster]    Script Date: 28/06/2024 16:20:14 **/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+ALTER TRIGGER [dbo].[ta_Tbl_TechnologyMaster] ON [dbo].[Tbl_TechnologyMaster] 
+FOR INSERT, UPDATE, DELETE
+AS 
+DECLARE @FIELD INT, @maxfield INT, @fieldname VARCHAR(128), @PKCols VARCHAR(1000), @SQL NVARCHAR(2000), @TYPE CHAR(1) --*****
+-- Table specific information
+DECLARE @TableName VARCHAR(128)
+-- Get primary key columns for full outer join
+SELECT @PKCols = ' i.TechnologyId = d.TechnologyId'
+SELECT @TableName = 'Tbl_TechnologyMaster'
+-- End table specific information
+
+SELECT * INTO #ins FROM inserted
+SELECT * INTO #del FROM deleted 
+
+IF EXISTS (SELECT * FROM inserted)
+    IF EXISTS (SELECT * FROM deleted)
+        SELECT @TYPE = 'U'
+            ELSE
+        SELECT @TYPE = 'I'
+ELSE
+    SELECT @TYPE = 'D' 
+IF @TYPE = 'I'
+    BEGIN  -- insert        
+        INSERT INTO Tbl_Audit_TechnologyMaster (TechnologyId, change_user, change_category, field, previous_value, changed_to_value)
+        SELECT i.TechnologyId, i.change_user, 'I', NULL, NULL, NULL
+        FROM #ins i
+    END
+ELSE IF @TYPE = 'D'
+    BEGIN    -- delete        
+        INSERT INTO Tbl_Audit_TechnologyMaster(TechnologyId, change_user, change_category, field, previous_value, changed_to_value)
+        SELECT d.TechnologyId, d.change_user, 'D', NULL, NULL, NULL
+        FROM #del d
+    END
+ELSE -- @TYPE = 'U'
+    BEGIN  -- need to do dynamic SQL for updates only
+        SELECT @FIELD = 0, @maxfield = MAX(ORDINAL_POSITION) FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_NAME = @TableName
+        WHILE @FIELD < @maxfield
+            BEGIN
+                SELECT @FIELD = MIN(ORDINAL_POSITION) FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_NAME = @TableName AND ORDINAL_POSITION > @FIELD                
+                SELECT @fieldname = COLUMN_NAME FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_NAME = @TableName AND ORDINAL_POSITION = @FIELD
+                IF @fieldname <> 'change_date' AND @fieldName <> 'change_user' AND @fieldname <> 'create_date'
+                    BEGIN
+                        IF dbo.fn_IsBitSetInBitmask(COLUMNS_UPDATED(), COLUMNPROPERTY(OBJECT_ID(@TableName), @fieldName, 'ColumnID')) <> 0
+                            BEGIN                                                                                                                                                        
+                                IF OBJECT_ID('tempdb..#tempVals') IS NOT NULL DROP TABLE #tempVals
+                                CREATE TABLE #tempVals (id INT, previous_text NVARCHAR (MAX), current_text NVARCHAR (MAX))
+                                DECLARE @iField NVARCHAR (50) 
+                                SELECT @iField = LEFT(@PKCols, CHARINDEX('=', @PKCols, 1)-1) -- stores just the insert id part: i.ext_id
+                                SELECT @sql = 'INSERT INTO #tempVals ' +
+                                            ' SELECT ' + @iField +  -- get the id of the table
+                                            ', d.' + @fieldName + ', i.' + @fieldName +
+                                            ' FROM #ins i full outer join #del d ON ' + @PKCols 
+                                EXEC (@sql)
+                                -- temp table now stores the indentity id of the changed table as well as the previous and current values
+                                -- first need to make sure the field has changed because our Update SPs pass in all fields, not just changed ones
+                                SELECT @sql = 'INSERT INTO Tbl_Audit_TechnologyMaster (TechnologyId, change_user, change_category, field, previous_value, changed_to_value) ' +
+                                    ' SELECT i.TechnologyId, i.change_user, ''U'', ' +
+                                        '''' + @fieldname + ''', ' +
+                                        't.previous_text, t.current_text' +
+                                    ' FROM #ins i full outer join #del d ON ' + @PKCols +
+                                    ' INNER JOIN #tempVals t ON ' + @iField + ' = t.ID ' +
+                                    ' WHERE i.[' + @fieldname + '] <> d.[' + @fieldname + ']' +
+                                    '    OR (i.[' + @fieldname + '] is null and d.[' + @fieldname + '] is not null)' + 
+                                    '    OR (i.[' + @fieldname + '] is not null and d.[' + @fieldname + '] is null)'                                 
+                                EXEC (@sql)                                                                
+                            END            
+                    END            
+            END
+    END
