@@ -1,3 +1,15 @@
+What is parallel programming in C#?
+Components of .Net Framework
+Framework class library
+
+
+
+
+
+
+
+
+
 https://jobs.swagapp.com/AU  -- Job Portal for Australia
 
 What is Microsoft .Net Core Aspire ?
