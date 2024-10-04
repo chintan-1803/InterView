@@ -1,3 +1,8 @@
+Interesting questions for senior post of .Net developer
+
+https://beetroot.co/team/18-interview-questions-to-ask-a-senior-net-developer/
+
+
 
 Presentation for MicroServices Architecture:
 
@@ -5,6 +10,7 @@ https://docs.google.com/presentation/d/12dzi-h7MdXn6fxlUj0kStiab9Qkh4tDv/edit?us
 
 What is parallel programming in C#?
 Components of .Net Framework
+
 Framework class library
 
 
