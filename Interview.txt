@@ -1,4 +1,6 @@
-Two best answers what we can on how to secure API layer from unwanted access:
+best answers what we can on how to secure API layer from unwanted access:
+
+
 
 1. Swagger middleware can be remove from product publish so that no one access swagger from production URL
 2. If we use any cloud platform for deployment, for example Azure then App settings skeys should be placed in Azure key vault and accessed the same from it only.
@@ -6,7 +8,6 @@ Two best answers what we can on how to secure API layer from unwanted access:
 4. IP whitelisting
 5. Inbound / OutBound rule set up in Azure
 6. JWT token Authorization
-
 
 
 
