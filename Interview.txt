@@ -1,3 +1,18 @@
+
+Interview Questions:
+
+1)Can you explain the background process of dependency injection and how it works in .NET?
+2)Why can’t we directly inject one class into another class? What are the advantages of using interfaces?
+3)What design patterns are you familiar with, and which ones do you typically follow in your projects?
+4)What challenges have you encountered in your recent project, and how did you overcome them?
+5)What authentication methods do you know, and which ones have you implemented in your projects?
+6)What parameters do you typically pass in a JWT token?
+7)How would you prevent server overload if a user is making excessive requests?
+
+
+
+
+
 best answers what we can on how to secure API layer from unwanted access:
 
 
