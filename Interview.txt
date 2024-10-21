@@ -1,3 +1,23 @@
+Interview Questions:
+
+Angular 
+	How can we pass data between two independent components in Angular ?
+	RxJs methods to play with response of Subscribe method in Angular ?
+	What is alternative of Redux in Angular which can be used for session management ? NgRx
+	
+.Net core 
+	Provide underhood explaination of Dictionary Object
+	Explain Dependency Injection
+	What are middlewares? How can we create custom middlewares ? What are methods that we need to write in custom middlewares?
+	What does happen if we inject transient service in Singleton service ?
+
+SQL
+
+	-- What Normalisation and Denormalisation in SQL ?
+	-- Composite Key Index & how does the same work
+
+
+
 
 Interview Questions:
 
