@@ -1,3 +1,15 @@
+AddScoped in layman terms:
+
+Imagine you run a coffee shop:
+
+A customer (HTTP request) comes in, and you give them one reusable coffee cup (service instance) to use while they're there.
+While they're in the shop, they can use the same cup to get refills (shared within the request).
+When they leave, you take the cup back (service is discarded).
+In simple words, AddScoped creates a single reusable item (service) for each customer (request), and once they're done, it’s no longer used.
+
+
+
+
 Interview Questions:
 
 Angular 
