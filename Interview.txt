@@ -1,3 +1,14 @@
+AddSingleton in layman terms:
+
+Imagine you run a coffee shop:
+
+You have a special coffee mug (service) that you only give to your best customer (the entire application).
+The same customer uses this mug every time they visit, no matter how many times they come.
+The mug is never thrown away or replaced; it stays with them for the entire time they’re a customer.
+
+In simple words, AddSingleton creates just one instance of something (service) for the whole application, and it’s shared and used throughout the entire lifetime of the application.
+
+
 AddTransient in layman terms:
 
 Imagine you run a coffee shop:
