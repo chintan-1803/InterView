@@ -1,3 +1,11 @@
+AddTransient in layman terms:
+
+Imagine you run a coffee shop:
+
+Every time a customer (HTTP request) orders coffee, you give them a brand-new disposable cup (a new instance of the service).
+Even if the same customer comes back for another order during their visit, they get a fresh cup each time.
+
+
 AddScoped in layman terms:
 
 Imagine you run a coffee shop:
