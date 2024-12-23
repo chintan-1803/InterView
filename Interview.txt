@@ -1,3 +1,5 @@
+Can we create publish profile file for Azure VM deployment likewise app service deployment ? Answer: Yes with custom publish profile file
+
 How do you implement authentication and authorization in a .NET Core application, and what strategies do you use to secure APIs in a multi-tenant environment?
 
 
