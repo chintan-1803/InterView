@@ -1,3 +1,6 @@
+How do you implement authentication and authorization in a .NET Core application, and what strategies do you use to secure APIs in a multi-tenant environment?
+
+
 AddSingleton in layman terms:
 
 Imagine you run a coffee shop:
