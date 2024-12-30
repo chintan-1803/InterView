@@ -1,3 +1,8 @@
+List vs IEnumerable in C#
+	List: A flexible collection where you can add, remove, and access items by their position (index).
+	IEnumerable: A simple "read-only list" that you can loop through, but you can’t modify or access items by index.
+
+
 Can we create publish profile file for Azure VM deployment likewise app service deployment ? Answer: Yes with custom publish profile file
 
 How do you implement authentication and authorization in a .NET Core application, and what strategies do you use to secure APIs in a multi-tenant environment?
