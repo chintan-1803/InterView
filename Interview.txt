@@ -28,6 +28,17 @@ In .NET Core, the number of times a service's constructor is called depends on t
 For scoped services, the constructor is called once per scope, which typically means once per HTTP request in a web application. If you need to optimize constructor calls, consider choosing the appropriate service lifetime.
 
 
+Life time of Service in Angular project -- What type values we can assign to providedIn for any service 
+
+In Angular, the providedIn property of the @Injectable decorator specifies where the service should be available for dependency injection. This determines the scope and lifetime of the service. Below are the possible values you can assign to providedIn:
+
+'root'
+
+Description: The service is registered in the root injector, making it a singleton across the entire application.
+
+The service is instantiated only once.
+Available application-wide, including lazy-loaded modules.
+
 What is .Net CLR version in IIS ?
 
 List vs IEnumerable in C# ? Compare them in the context of performance
