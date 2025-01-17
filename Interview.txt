@@ -36,8 +36,12 @@ In Angular, the providedIn property of the @Injectable decorator specifies where
 
 Description: The service is registered in the root injector, making it a singleton across the entire application.
 
-The service is instantiated only once.
-Available application-wide, including lazy-loaded modules.
+The service is instantiated only once.Available application-wide, including lazy-loaded modules.
+
+'platform'
+'any'
+A Specific Module
+ No providedIn (Default Behavior)
 
 What is .Net CLR version in IIS ?
 
