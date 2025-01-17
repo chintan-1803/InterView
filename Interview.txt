@@ -1,3 +1,33 @@
+how many times constructor of service called in .net core based on its lifetime mentioned in .net core
+
+In .NET Core, the number of times a service's constructor is called depends on the lifetime of the service and how it is registered in the Dependency Injection (DI) container. The three main lifetimes are:
+
+1. Singleton:
+
+	The service is created once and shared throughout the application.
+	The constructor is called only once during the application's lifetime, when the service is first requested.
+
+	Constructor is called once, no matter how many times the service is injected.
+
+2 Scoped:
+	A new instance of the service is created for each scope.
+	A scope typically corresponds to a single HTTP request in web applications.
+	The constructor is called once per HTTP request (or scope).
+
+	For a web application:
+	If the service is injected into multiple classes during the same request, the constructor is called once for that request.
+	For different HTTP requests, the constructor is called once per request.
+
+3. Transient:
+
+	A new instance of the service is created every time it is requested.
+	The constructor is called each time the service is injected.
+
+	Constructor is called every time the service is requested, even within the same scope or request.
+
+For scoped services, the constructor is called once per scope, which typically means once per HTTP request in a web application. If you need to optimize constructor calls, consider choosing the appropriate service lifetime.
+
+
 What is .Net CLR version in IIS ?
 
 List vs IEnumerable in C# ? Compare them in the context of performance
