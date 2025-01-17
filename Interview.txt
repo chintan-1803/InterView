@@ -1,4 +1,4 @@
-how many times constructor of service called in .net core based on its lifetime mentioned in .net core
+how many times constructor of service called in .net core based on its lifetime mentioned in .net core -- We can explain difference between lifetime of service based on this explaination 
 
 In .NET Core, the number of times a service's constructor is called depends on the lifetime of the service and how it is registered in the Dependency Injection (DI) container. The three main lifetimes are:
 
