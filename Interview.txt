@@ -1,3 +1,36 @@
+How to get multiple identity column values as output for relevant insert command in SQL?
+
+CREATE TABLE Employees (
+    ID INT IDENTITY(1,1) PRIMARY KEY,
+    Name VARCHAR(100)
+);
+
+
+CREATE TABLE Employees1 (
+    ID INT IDENTITY(1,1) PRIMARY KEY,
+    Name VARCHAR(100)
+);
+
+INSERT INTO Employees1 (Name)
+VALUES ('Alice'), ('Bob'), ('Charlie');
+
+
+
+
+DECLARE @InsertedRecords TABLE (ID INT);
+
+
+INSERT INTO Employees (Name)
+OUTPUT INSERTED.ID INTO @InsertedRecords
+select Name FROM Employees1
+
+SELECT * FROM @InsertedRecords
+
+
+
+
+
+
 how many times constructor of service called in .net core based on its lifetime mentioned in .net core -- We can explain difference between lifetime of service based on this explaination 
 
 In .NET Core, the number of times a service's constructor is called depends on the lifetime of the service and how it is registered in the Dependency Injection (DI) container. The three main lifetimes are:
