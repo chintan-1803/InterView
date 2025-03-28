@@ -3,6 +3,13 @@ Using .AsNoTracking() is like reading a book without taking notes—you just loo
 In EF Core, when tracking is enabled during a read operation, it stores metadata about the retrieved entities in the Change Tracker. This metadata helps EF Core detect changes and update the database efficiently when SaveChanges() is called.
 
 
+Metadata is nothing but all information like association of properties of entity with table fields, other relations of table like primary and foreign key refenrce.
+
+Actully retrieval of this data in DML (insert, update , delete) operation is necessary, because by using this only actual SQL query will be generated.
+
+But in case of just reading data as no further DML is required there is no point of getting metadata of entities in memory. By using AsOnTracking function in data retrieval, we can eliminate process of fetching metadata which will save time and improve performance of query
+
+
 It seems that by default SSMS does only check 8 top rows to define data type of text column based on data availability and decide length which can cause data truncation if content in other bottom rows is lengthy. To avoid such case, in the machine from where we are performing data load, we need to change the value of registry field called "TypeGuessRows" to 0 which does check all rows and define length of text fields which will avoid truncation of text.
 
 Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Office\ClickToRun\REGISTRY\MACHINE\Software\Wow6432Node\Microsoft\Office\16.0\Access Connectivity Engine\Engines\Excel
