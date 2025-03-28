@@ -1,5 +1,6 @@
 Using .AsNoTracking() is like reading a book without taking notes—you just look at the data but don’t keep track of any changes.
 
+In EF Core, when tracking is enabled during a read operation, it stores metadata about the retrieved entities in the Change Tracker. This metadata helps EF Core detect changes and update the database efficiently when SaveChanges() is called.
 
 
 It seems that by default SSMS does only check 8 top rows to define data type of text column based on data availability and decide length which can cause data truncation if content in other bottom rows is lengthy. To avoid such case, in the machine from where we are performing data load, we need to change the value of registry field called "TypeGuessRows" to 0 which does check all rows and define length of text fields which will avoid truncation of text.
