@@ -1,3 +1,7 @@
+https://www.rutvik.me/ -- This is the way how we can present our shelf for interview
+
+
+
 Using .AsNoTracking() is like reading a book without taking notes—you just look at the data but don’t keep track of any changes.
 
 In EF Core, when tracking is enabled during a read operation, it stores metadata about the retrieved entities in the Change Tracker. This metadata helps EF Core detect changes and update the database efficiently when SaveChanges() is called.
