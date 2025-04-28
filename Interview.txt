@@ -1,3 +1,22 @@
+What is an event-driven architecture, and how does it differ from traditional request-response models?
+
+Have you worked with event-driven systems in production? Can you describe a challenge you faced and how you solved it?
+
+What are the trade-offs between at-most-once, at-least-once, and exactly-once event delivery semantics?
+
+Imagine you’ve developed a new feature, but during testing, QA reports unexpected performance issues.
+How would you debug and resolve the issue?
+
+You’ll be working closely with the product team and other developers.
+Can you share an example of how you collaborated with non-technical stakeholders to deliver a technical solution?
+
+What is your current notice period, and when would you be available to start this contract role?
+
+
+
+
+
+
 https://www.rutvik.me/ -- This is the way how we can present our shelf for interview
 
 
