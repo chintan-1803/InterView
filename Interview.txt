@@ -1,3 +1,62 @@
+1. Tell me about a time when you had to debug a critical issue in a production .NET application.
+
+2. Describe a situation where you designed and implemented a scalable .NET Core microservices solution.
+
+3. Can you share an experience where you improved the performance of a full stack application?
+
+4. Talk about a time when you introduced a new technology (e.g., Angular, Blazor, or Azure DevOps) to your team or project.
+
+5. Describe a challenge you faced when integrating front-end (Angular/React) with a complex backend API. How did you resolve it?
+
+
+6. Tell me about a time when you mentored a junior developer or onboarded a new team member.
+
+7. Describe a situation where you had a conflict with a teammate or stakeholder. How did you handle it?
+
+8. Have you led a development team or a project? Describe your role and how you ensured its success.
+
+9. Share an experience where you coordinated work across cross-functional teams (e.g., QA, DevOps, Architects).
+
+10. Tell me about a time when you had to push back on unrealistic deadlines or project scope.
+
+11. Talk about a time when you took ownership of a failing project or module and turned it around.
+
+12. Describe an instance where you had to meet tight deadlines under pressure. What did you do to deliver on time?
+
+13. Tell me about a situation where your planning or estimation helped avoid major project delays.
+
+14. Have you ever handled a live deployment or major release? How did you prepare for and manage it?
+
+15. Describe a time when your testing or CI/CD strategy significantly reduced bugs or deployment issues.
+
+16. Tell me about a time when you analyzed application logs or metrics to drive improvements.
+
+17. Describe a moment when you proposed a process or code refactoring that saved time or reduced complexity.
+
+18. Have you ever performed a root cause analysis for recurring bugs or failures? What did you find and fix?
+
+19. Talk about a situation where automation (testing, deployment, code reviews) improved your team's workflow.
+
+20. Share an experience when you had to quickly learn and apply a new technology or framework to meet project needs.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 What is an event-driven architecture, and how does it differ from traditional request-response models?
 
 Have you worked with event-driven systems in production? Can you describe a challenge you faced and how you solved it?
