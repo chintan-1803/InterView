@@ -1,3 +1,6 @@
+List of star questions for senior .net full stack developer questions in Australia
+
+
 1. Tell me about a time when you had to debug a critical issue in a production .NET application.
 
 2. Describe a situation where you designed and implemented a scalable .NET Core microservices solution.
